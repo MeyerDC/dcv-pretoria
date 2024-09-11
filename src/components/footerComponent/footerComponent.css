@@ -1,0 +1,33 @@
+/* footerComponent.css */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #181818d7;
+    padding: 15px;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.social-media-links a .icon {
+    color: #fd02cd;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.trademark {
+    text-align: center;
+}
+
+.social-media-links p {
+    margin: 10px;
+    font-size: 14px;
+    color: #c4c2c2;
+}
