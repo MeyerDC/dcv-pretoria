@@ -12,6 +12,13 @@ const SupportComponent = () => {
         <p>Account Number: 63116276337</p>
         <p>Branch Code: 210835</p>
       </div>
+      <div className="contact-details">
+        <h2>Contact Details</h2>
+        <p>
+          Email:{" "}
+          <a href="mailto:dcv.pretoria@gmail.com">dcv.pretoria@gmail.com</a>
+        </p>
+      </div>
     </div>
   );
 };

@@ -4,6 +4,7 @@
   background-position: center;
   background-size: inherit;
   height: 100vh;
+  overflow: auto;
 }
 
 @media (max-width: 768px) {
