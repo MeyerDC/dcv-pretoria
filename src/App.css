@@ -6,6 +6,12 @@
   height: 100vh;
 }
 
+@media (max-width: 768px) {
+  .App {
+    background-image: url("assets/images/dcv-cover-mobile.jpg");
+  }
+}
+
 .App-header {
   display: flex;
   flex-direction: column;
@@ -13,4 +19,8 @@
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+h1 {
+  color: #eaa930;
 }

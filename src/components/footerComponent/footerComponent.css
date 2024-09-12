@@ -16,10 +16,15 @@ footer {
     margin: 10px;
 }
 
-.social-media-links a .icon {
-    color: #fd02cd;
+.social-media-links a {
     text-decoration: none;
     margin-right: 10px;
+    .icon-ig {
+        color: #fd02cd;
+    }
+    .icon-fb {
+        color: #3b5998;
+    }
 }
 
 .trademark {

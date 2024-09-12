@@ -6,6 +6,7 @@ import NavbarComponent from "./components/navbarComponent/navbarComponent";
 import HomeComponent from "./components/homeComponent/homeComponent";
 import AboutComponent from "./components/aboutComponent/aboutComponent";
 import SupportComponent from "./components/supportComponent/supportComponent";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -16,11 +17,10 @@ function App() {
         </header>
         <main className="App-main">
           <Routes>
-            <Route path="/home" Component={HomeComponent} />
+            <Route path="/" Component={HomeComponent} />
             <Route path="/events" Component={EventsComponent} />
             <Route path="/about" Component={AboutComponent} />
             <Route path="/support" Component={SupportComponent} />
-            <Route path="/" Component={HomeComponent} />
           </Routes>
         </main>
         <FooterComponent />
