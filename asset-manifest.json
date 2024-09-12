@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d815c5e8.css",
-    "main.js": "/static/js/main.c1927025.js",
+    "main.css": "/static/css/main.e91a7534.css",
+    "main.js": "/static/js/main.e4e51d8f.js",
     "static/js/453.a933ee37.chunk.js": "/static/js/453.a933ee37.chunk.js",
     "static/media/dcv-cover.jpg": "/static/media/dcv-cover.674974a5bc4b4ea7b134.jpg",
     "static/media/dcv-cover-mobile.jpg": "/static/media/dcv-cover-mobile.064bd680a3c66577f06d.jpg",
@@ -9,12 +9,12 @@
     "static/media/dcv-logo.png": "/static/media/dcv-logo.a17b46a35c2dd61daec2.png",
     "static/media/coming-soon.jpg": "/static/media/coming-soon.649055bfe1c07b5c1f93.jpg",
     "index.html": "/index.html",
-    "main.d815c5e8.css.map": "/static/css/main.d815c5e8.css.map",
-    "main.c1927025.js.map": "/static/js/main.c1927025.js.map",
+    "main.e91a7534.css.map": "/static/css/main.e91a7534.css.map",
+    "main.e4e51d8f.js.map": "/static/js/main.e4e51d8f.js.map",
     "453.a933ee37.chunk.js.map": "/static/js/453.a933ee37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d815c5e8.css",
-    "static/js/main.c1927025.js"
+    "static/css/main.e91a7534.css",
+    "static/js/main.e4e51d8f.js"
   ]
 }
