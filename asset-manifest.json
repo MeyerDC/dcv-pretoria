@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e91a7534.css",
-    "main.js": "/static/js/main.e4e51d8f.js",
+    "main.js": "/static/js/main.b350946f.js",
     "static/js/453.a933ee37.chunk.js": "/static/js/453.a933ee37.chunk.js",
     "static/media/dcv-cover.jpg": "/static/media/dcv-cover.674974a5bc4b4ea7b134.jpg",
     "static/media/dcv-cover-mobile.jpg": "/static/media/dcv-cover-mobile.064bd680a3c66577f06d.jpg",
@@ -10,11 +10,11 @@
     "static/media/coming-soon.jpg": "/static/media/coming-soon.649055bfe1c07b5c1f93.jpg",
     "index.html": "/index.html",
     "main.e91a7534.css.map": "/static/css/main.e91a7534.css.map",
-    "main.e4e51d8f.js.map": "/static/js/main.e4e51d8f.js.map",
+    "main.b350946f.js.map": "/static/js/main.b350946f.js.map",
     "453.a933ee37.chunk.js.map": "/static/js/453.a933ee37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e91a7534.css",
-    "static/js/main.e4e51d8f.js"
+    "static/js/main.b350946f.js"
   ]
 }
