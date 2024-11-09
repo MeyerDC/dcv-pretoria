@@ -1,0 +1,70 @@
+{
+    "en": {
+        "about": {
+            "heading": "About Us",
+            "content": "Welcome to the German Carnival Association of Pretoria!\n We are a vibrant community dedicated to celebrating the German carnival tradition in Pretoria.\n Our mission is to promote cultural exchange, unity, and fun through various carnival events and activities.\n Join us and experience the joy and excitement of the German carnival!"
+        },
+        "events": {
+            "date1": "February 28, 2025",
+            "title1": "DCV Carnival - German Night",
+            "date2": "March 1, 2025",
+            "title2": "DCV Carnival - International Evening"
+        },
+        "footer": {
+            "rights": "All rights reserved."
+        },
+        "home": {
+            "welcome": "Welcome to the German Carnival Association of Pretoria!"
+        },
+        "support": {
+            "heading": "Help us continue our work by making a donation.",
+            "bankDetails": "Bank Details",
+            "accountHolder": "Account Holder",
+            "bank": "Bank",
+            "accountNumber": "Account Number",
+            "branchCode": "Branch Code",
+            "contactDetails": "Contact Details",
+            "email": "Email"
+        },
+        "navbar": {
+            "home": "Home",
+            "events": "Events",
+            "about": "About Us",
+            "support": "Support Us"
+        }
+    },
+    "de": {
+        "about": {
+            "heading": "Über uns",
+            "content": "Willkommen beim Deutschen Karneval Verein von Pretoria!\n Wir sind eine lebendige Gemeinschaft, die sich der Feier der deutschen Karnevalstradition in Pretoria widmet.\n Unsere Mission ist es, kulturellen Austausch, Einheit und Spaß durch verschiedene Karnevalsveranstaltungen und Aktivitäten zu fördern.\n Begleiten Sie uns und erleben Sie die Freude und Aufregung des deutschen Karnevals!"
+        },
+        "events": {
+            "date1": "28. Februar 2025",
+            "title1": "DCV Karneval - Deutscher Abend",
+            "date2": "1. März 2025",
+            "title2": "DCV Karneval - Internationaler Abend"
+        },
+        "footer": {
+            "rights": "Alle Rechte vorbehalten."
+        },
+        "home": {
+            "welcome": "Willkommen beim Deutschen Karneval Verein von Pretoria!"
+        },
+        "support": {
+            "heading": "Helfen Sie uns, unsere Arbeit fortzusetzen, indem Sie eine Spende machen.",
+            "bankDetails": "Bankverbindung",
+            "accountHolder": "Kontoinhaber",
+            "bank": "Bank",
+            "accountNumber": "Kontonummer",
+            "branchCode": "Bankleitzahl",
+            "contactDetails": "Kontaktdaten",
+            "email": "Email"
+        },
+        "navbar": {
+            "home": "Startseite",
+            "events": "Veranstaltungen",
+            "about": "Über uns",
+            "support": "Unterstützen Sie uns"
+        }
+    }
+}

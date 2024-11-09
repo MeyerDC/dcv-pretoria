@@ -1,10 +1,14 @@
 import React from "react";
 import "./homeComponent.css";
+import { useLanguage } from "../language-context/language-contextComponent";
 
 function HomeComponent() {
+  const { language, translations } = useLanguage();
+  const { welcome } = translations[language].home;
+
   return (
     <div className="home-body">
-      <h1>Willkommen beim Deutschen Karneval Verein von Pretoria!</h1>
+      <h1>{welcome}</h1>
     </div>
   );
 }

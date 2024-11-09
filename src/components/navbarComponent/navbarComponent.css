@@ -1,73 +1,89 @@
 .navbar {
-    background-color: none;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  background-color: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .navbar-logo {
-    height: 10vmin;
-    pointer-events: none;
+  height: 10vmin;
+  pointer-events: none;
 }
 
 .navbar-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar-link {
-    margin-right: 50px;
-    margin-left: 50px;
-    text-decoration: none;
-    color: #eaa930;
+  margin-right: 50px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #eaa930;
 }
 
 .navbar-link:hover {
-    color: #d10808;
+  color: #d10808;
 }
 
 .navbar-toggle {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #eaa930;
-    margin-right: 20px;
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #eaa930;
+  margin-right: 20px;
+}
+
+.language-toggle {
+  margin: 0 10px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.language-toggle.active {
+  color: #d10808;
+}
+
+.language-toggle:not(.active) {
+  color: #eaa930;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        align-items: flex-start;
-    }
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
-    .navbar-toggle {
-        display: block;
-    }
+  .navbar-toggle {
+    display: block;
+  }
 
-    .navbar-list {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .navbar-list.open {
-        display: flex;
-    }
+  .navbar-list.open {
+    display: flex;
+  }
 
-    .navbar-item {
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
 
-    .navbar-link {
-        margin: 0;
-    }
+  .navbar-link {
+    margin: 0;
+  }
 }
