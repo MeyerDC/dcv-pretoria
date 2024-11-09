@@ -29,40 +29,16 @@ const useHandleImageClick = () => {
 };
 
 const EventsComponent = () => {
-  const {
-    showModal,
-    handleCloseModal,
-    handleImageClick,
-    selectedImage,
-  } = useHandleImageClick();
+  const { showModal, handleCloseModal, handleImageClick, selectedImage } =
+    useHandleImageClick();
 
   return (
     <div className="event-body">
       <Accordion defaultActiveKey="0">
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>
-            <h2 className="event-date">12 October 2024</h2>
-            <h2 className="event-title">Potjie Competition</h2>
-          </Accordion.Header>
-          <Accordion.Body>
-            <img
-              className="accordian-image"
-              src={potjiekos}
-              alt="Potjie Competition"
-              onClick={() => handleImageClick(potjiekos)}
-            />
-            <p className="event-description">
-              To enter, email us at{" "}
-              <a href="mailto:dcv.pretoria@gmail.com">dcv.pretoria@gmail.com</a>
-              . <br></br>
-              RSVP by 28 September 2024.
-            </p>
-          </Accordion.Body>
-        </Accordion.Item>
         <Accordion.Item eventKey="1">
           <Accordion.Header>
-            <h2 className="event-date">28 February 2025</h2>
-            <h2 className="event-title">DCV Karneval - German Night</h2>
+            <h2 className="event-date">28. Februar 2025</h2>
+            <h2 className="event-title">DCV Karneval - Deutscher Abend</h2>
           </Accordion.Header>
           <Accordion.Body>
             <img
@@ -76,9 +52,9 @@ const EventsComponent = () => {
         </Accordion.Item>
         <Accordion.Item eventKey="2">
           <Accordion.Header>
-            <h2 className="event-date">1 March 2025</h2>
+            <h2 className="event-date">1. März 2025</h2>
             <h2 className="event-title">
-              DCV Karneval - International Evening
+              DCV Karneval - Internationaler Abend
             </h2>
           </Accordion.Header>
           <Accordion.Body>

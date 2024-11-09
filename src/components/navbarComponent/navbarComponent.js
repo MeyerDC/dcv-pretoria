@@ -21,22 +21,22 @@ function NavbarComponent() {
       <ul className={`navbar-list ${isOpen ? "open" : ""}`}>
         <li className="navbar-item">
           <Link to="/" className="navbar-link">
-            Home
+            Startseite
           </Link>
         </li>
         <li className="navbar-item">
           <Link to="/events" className="navbar-link">
-            Events
+            Veranstaltungen
           </Link>
         </li>
         <li className="navbar-item">
           <Link to="/about" className="navbar-link">
-            About
+            Über uns
           </Link>
         </li>
         <li className="navbar-item">
           <Link to="/support" className="navbar-link">
-            Support us
+            Unterstützen Sie uns
           </Link>
         </li>
       </ul>
