@@ -31,6 +31,8 @@
   border-radius: 5px;
   border-color: #000;
   background-color: #3c3c3cbd;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .event-date {
