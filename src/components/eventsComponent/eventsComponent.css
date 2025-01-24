@@ -12,76 +12,45 @@
   min-height: 50vh;
 }
 
-.accordion-item {
-  max-width: 700px;
-  width: 70vw;
-  margin: 10px 0;
-  padding: 0;
-  border: 1px solid #000;
+.event-image {
+  max-width: 100%;
+  height: 300px;
+  object-fit: contain;
   border-radius: 10px;
-  background-color: #3c3c3c72 !important;
 }
 
-.accordion-header {
+.event-row {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  background-color: #3c3c3c72;
+  width: 50%;
+  margin: 10px 0;
+  padding: 10px;
+  border-style: outset;
+  border-radius: 5px;
+  border-color: #000;
+  background-color: #3c3c3cbd;
 }
 
 .event-date {
-  flex: 1;
-  text-align: left;
-  font-size: 1.2em;
-  color: #eaa930;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fbca3f;
 }
 
 .event-title {
-  flex: 1;
-  text-align: right;
-  font-size: 1.2em;
-  color: #eaa930;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fbca3f;
 }
 
-.event-description {
-  font-size: 18px;
-  color: #eaa930;
-  a {
-    color: #ff7f7f;
-  }
-}
-
-.accordian-image {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.modal-image {
-  max-width: 90vw;
-  max-height: 90vh;
-}
-
-.modal-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0 !important;
-  background-color: #3c3c3c72;
-}
-
-.accordion-button::after {
-  display: none;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: #3c3c3c72 !important;
-}
-
-.accordion-button {
-  background-color: #3c3c3c72 !important;
+.buy-ticket-btn {
+  background-color: #fbca3f;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
 }

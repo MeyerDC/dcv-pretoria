@@ -6,9 +6,16 @@
         },
         "events": {
             "date1": "February 28, 2025",
-            "title1": "DCV Carnival - German Night",
-            "date2": "March 1, 2025",
-            "title2": "DCV Carnival - International Evening"
+            "title1": "DCV Carnival - Kids Carnival",
+            "date2": "February 28, 2025",
+            "title2": "DCV Carnival - German Night",
+            "date3": "March 1, 2025",
+            "title3": "DCV Carnival - International Evening",
+            "ticketLinks": {
+                "event1": "https://www.howler.co.za/events/dcv-2025-kinderkarneval-e6be",
+                "event2": "https://www.howler.co.za/events/dcv-2025-buttenabend-formeller-abend-formal-evening-9f65",
+                "event3": "https://www.howler.co.za/events/dcv-2025-internationaler-abend-international-evening-f73f"
+              }
         },
         "footer": {
             "rights": "All rights reserved."
@@ -40,9 +47,16 @@
         },
         "events": {
             "date1": "28. Februar 2025",
-            "title1": "DCV Karneval - Deutscher Abend",
-            "date2": "1. März 2025",
-            "title2": "DCV Karneval - Internationaler Abend"
+            "title1": "DCV Karneval - Kinderkarneval",
+            "date2": "28. Februar 2025",
+            "title2": "DCV Karneval - Deutscher Abend",
+            "date3": "1. März 2025",
+            "title3": "DCV Karneval - Internationaler Abend",
+            "ticketLinks": {
+                "event1": "https://www.howler.co.za/events/dcv-2025-kinderkarneval-e6be",
+                "event2": "https://www.howler.co.za/events/dcv-2025-buttenabend-formeller-abend-formal-evening-9f65",
+                "event3": "https://www.howler.co.za/events/dcv-2025-internationaler-abend-international-evening-f73f"
+              }
         },
         "footer": {
             "rights": "Alle Rechte vorbehalten."

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbarComponent.css";
 import logo from "../../assets/images/dcv-logo.png";
+import * as Icon from "react-feather";
 import { useLanguage } from "../language-context/language-contextComponent";
 
 function NavbarComponent() {
@@ -58,6 +59,14 @@ function NavbarComponent() {
           >
             DE
           </button>
+        </li>
+        <li className="navbar-item social-media-links">
+          <a href="https://www.instagram.com/dcv.pretoria/">
+            <Icon.Instagram className="icon-ig" />
+          </a>
+          <a href="https://www.facebook.com/share/zpH9XFFATVyH1hqk/?mibextid=qi2Omg">
+            <Icon.Facebook className="icon-fb" />
+          </a>
         </li>
       </ul>
     </nav>
