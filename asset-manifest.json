@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9690240b.css",
+    "main.css": "/static/css/main.c542dcab.css",
     "main.js": "/static/js/main.b938d6fc.js",
     "static/js/453.a933ee37.chunk.js": "/static/js/453.a933ee37.chunk.js",
     "static/media/dcv-cover.jpg": "/static/media/dcv-cover.674974a5bc4b4ea7b134.jpg",
@@ -8,12 +8,12 @@
     "static/media/dcv-logo.png": "/static/media/dcv-logo.a17b46a35c2dd61daec2.png",
     "static/media/dcv2025.jpeg": "/static/media/dcv2025.188579575c62a1325895.jpeg",
     "index.html": "/index.html",
-    "main.9690240b.css.map": "/static/css/main.9690240b.css.map",
+    "main.c542dcab.css.map": "/static/css/main.c542dcab.css.map",
     "main.b938d6fc.js.map": "/static/js/main.b938d6fc.js.map",
     "453.a933ee37.chunk.js.map": "/static/js/453.a933ee37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9690240b.css",
+    "static/css/main.c542dcab.css",
     "static/js/main.b938d6fc.js"
   ]
 }
