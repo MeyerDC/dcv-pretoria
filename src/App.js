@@ -6,6 +6,7 @@ import NavbarComponent from "./components/navbarComponent/navbarComponent";
 import HomeComponent from "./components/homeComponent/homeComponent";
 import AboutComponent from "./components/aboutComponent/aboutComponent";
 import SupportComponent from "./components/supportComponent/supportComponent";
+import PreviewComponent from "./components/previewComponent/previewComponent";
 import NotFoundComponent from "./components/notFoundComponent/notFoundComponent";
 import ElevenElevenComponent from "./components/elevenElevenComponent/elevenElevenComponent";
 import DecorComponent from "./components/decorComponent/decorComponent";
@@ -27,6 +28,7 @@ function App() {
               <Route path="/events" Component={EventsComponent} />
               <Route path="/about" Component={AboutComponent} />
               <Route path="/support" Component={SupportComponent} />
+              <Route path="/preview" Component={PreviewComponent} />
               <Route path="*" Component={NotFoundComponent} />
             </Routes>
           </main>

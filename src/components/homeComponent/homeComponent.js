@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "./homeComponent.css";
 import logo from "../../assets/images/dcv-logo-2027.png";
@@ -8,8 +8,8 @@ import CountdownComponent from "../countdownComponent/countdownComponent";
 import ExpectComponent from "../expectComponent/expectComponent";
 import GardeComponent from "../gardeComponent/gardeComponent";
 import SponsorsComponent from "../sponsorsComponent/sponsorsComponent";
-import SeasonOpeningComponent from "../seasonOpeningComponent/seasonOpeningComponent";
-import { isSeasonOpening, isSeasonOpeningPreview } from "../../utils/seasonOpening";
+import MilestoneComponent from "../milestoneComponent/milestoneComponent";
+import { useActiveMilestone } from "../../utils/milestones";
 import { EventFacts, Motto, Swoosh, TicketButton } from "../decorComponent/eventParts";
 
 function HomeComponent() {
@@ -17,18 +17,8 @@ function HomeComponent() {
   const { welcome } = translations[language].home;
   const t = translations[language].event;
 
-  // On 11.11. from 11:11 until midnight (SA time) the season-opening page
-  // takes over; the check runs every second so the page flips on the minute.
-  const [seasonOpening, setSeasonOpening] = useState(
-    () => isSeasonOpening() || isSeasonOpeningPreview()
-  );
-  useEffect(() => {
-    const timer = setInterval(
-      () => setSeasonOpening(isSeasonOpening() || isSeasonOpeningPreview()),
-      1000
-    );
-    return () => clearInterval(timer);
-  }, []);
+  // On a milestone day the home page changes (see data/milestones.js).
+  const milestone = useActiveMilestone();
 
   // Eleven quick taps on the jester set off the 11:11 celebration.
   const taps = useRef({ count: 0, last: 0 });
@@ -42,10 +32,17 @@ function HomeComponent() {
     }
   };
 
-  if (seasonOpening) return <SeasonOpeningComponent />;
+  if (milestone && milestone.variant === "page") {
+    return <MilestoneComponent milestone={milestone} />;
+  }
 
   return (
     <div className="home-body">
+      {milestone && milestone.variant === "banner" && (
+        <p className="milestone-banner">
+          {translations[language].milestones[milestone.id].text}
+        </p>
+      )}
       <img src={logo} alt="DCV Pretoria" className="home-logo" onClick={tapJester} />
       <p className="event-presents">{t.presents}</p>
       <h1 className="event-title">{t.title}</h1>

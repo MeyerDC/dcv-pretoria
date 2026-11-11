@@ -8,6 +8,12 @@ const event = {
   poster: { en: posterEn, de: posterDe },
   // First evening, doors open (South African time). Drives the countdown.
   startsAt: "2027-02-26T18:30:00+02:00",
+  // Last evening (South African date). With startsAt it sets the milestone
+  // dates in data/milestones.js.
+  lastDay: "2027-02-28",
+  // Date ticket sales open, e.g. "2026-12-01"; drives the "tickets on sale"
+  // milestone. Leave null until known.
+  ticketsOnSaleFrom: null,
   // Set to the ticket-shop URL once sales open; while null the site shows
   // "Tickets coming soon" instead of a buy button.
   ticketUrl: null,

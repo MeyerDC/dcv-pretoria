@@ -69,13 +69,6 @@
             "everyDay": "It's eleven past eleven – Karneval o'clock!",
             "seasonOpening": "11.11. at 11:11 – the fifth season has begun!"
         },
-        "seasonOpening": {
-            "kicker": "11 November · 11:11",
-            "title": "The fifth season has begun!",
-            "helau": "DCV Helau!",
-            "text": "At eleven past eleven on the eleventh of the eleventh, the Karneval season opens. The countdown to our next Karneval is on.",
-            "next": "Coming up"
-        },
         "expect": {
             "heading": "What to expect",
             "items": [
@@ -97,6 +90,113 @@
             "where": "German International School Pretoria",
             "signUp": "Sign up with",
             "helau": "DCV Helau!"
+        },
+        "milestones": {
+            "common": {
+                "next": "Coming up"
+            },
+            "season-opening": {
+                "name": "Season opening, 11.11. at 11:11",
+                "kicker": "11 November · 11:11",
+                "badge": "11:11",
+                "title": "The fifth season has begun!",
+                "shout": "DCV Helau!",
+                "text": "At eleven past eleven on the eleventh of the eleventh, the Karneval season opens. The countdown to our next Karneval is on."
+            },
+            "days-100": {
+                "name": "100 days to go",
+                "kicker": "Countdown",
+                "badge": "100",
+                "title": "100 days to Karneval!",
+                "shout": "DCV Helau!",
+                "text": "Time to start thinking about the costume."
+            },
+            "days-50": {
+                "name": "50 days to go",
+                "kicker": "Countdown",
+                "badge": "50",
+                "title": "Only 50 days to go!",
+                "shout": "DCV Helau!",
+                "text": "The Garde is rehearsing and the Elferrat is getting ready."
+            },
+            "days-11": {
+                "name": "11 days to go",
+                "kicker": "Countdown",
+                "badge": "11",
+                "title": "Only 11 days to go!",
+                "shout": "DCV Helau!",
+                "text": "Eleven – the jesters' number. See you at the Karneval!"
+            },
+            "tickets": {
+                "name": "Tickets on sale",
+                "kicker": "Karneval {year}",
+                "badge": "TICKETS",
+                "title": "Tickets are on sale!",
+                "shout": "DCV Helau!",
+                "text": "Get yours before they are gone."
+            },
+            "weiberfastnacht": {
+                "name": "Weiberfastnacht",
+                "kicker": "The Thursday before Rosenmontag",
+                "badge": "HELAU!",
+                "title": "It's Weiberfastnacht!",
+                "shout": "Watch your ties!",
+                "text": "Today the women take over, and no tie is safe. In Germany the street carnival begins."
+            },
+            "rosenmontag": {
+                "name": "Rosenmontag",
+                "kicker": "The high point of the Karneval",
+                "badge": "HELAU!",
+                "title": "It's Rosenmontag!",
+                "shout": "Greetings from Pretoria",
+                "text": "While the parades roll through Germany, we send a loud Helau from Pretoria."
+            },
+            "veilchendienstag": {
+                "name": "Veilchendienstag",
+                "text": "Veilchendienstag – the last day of Karneval in Germany. Ours is still to come!"
+            },
+            "aschermittwoch": {
+                "name": "Aschermittwoch (Ash Wednesday)",
+                "kicker": "Ash Wednesday",
+                "badge": "OVER?",
+                "title": "In Germany it's all over.",
+                "shout": "In Pretoria we're just getting started!",
+                "text": ""
+            },
+            "event-week": {
+                "name": "Event week",
+                "kicker": "This week",
+                "badge": "{date}",
+                "title": "It's Karneval week!",
+                "shout": "DCV Helau!",
+                "text": "Get the costume ready. Everything you need to know is below.",
+                "next": ""
+            },
+            "tonight": {
+                "name": "The evenings (\"Tonight!\")",
+                "kicker": "Karneval {year}",
+                "badge": "TONIGHT",
+                "title": "Tonight we celebrate!",
+                "shout": "DCV Helau!",
+                "text": "See you this evening. Everything you need to know is below.",
+                "next": ""
+            },
+            "thanks": {
+                "name": "Thank you (after the event)",
+                "kicker": "Karneval {year}",
+                "badge": "THANKS!",
+                "title": "That was Karneval {year}!",
+                "shout": "DCV Helau!",
+                "text": "Thank you to everyone who celebrated with us, to the Garde, the Elferrat, all our helpers and our sponsors."
+            }
+        },
+        "preview": {
+            "heading": "Milestone previews",
+            "intro": "Each row opens the home page as it would look on that day. Only rows marked as live switch on by themselves.",
+            "live": "Live on the day",
+            "previewOnly": "Preview only",
+            "days": "days",
+            "noDate": "No date set"
         }
     },
     "de": {
@@ -169,13 +269,6 @@
             "everyDay": "Elf Uhr elf – es ist Narrenzeit!",
             "seasonOpening": "Am 11.11. um 11:11 Uhr – die fünfte Jahreszeit beginnt!"
         },
-        "seasonOpening": {
-            "kicker": "11. November · 11:11 Uhr",
-            "title": "Die fünfte Jahreszeit hat begonnen!",
-            "helau": "DCV Helau!",
-            "text": "Am 11.11. um 11:11 Uhr beginnt die Karnevalssession. Der Countdown zu unserem nächsten Karneval läuft.",
-            "next": "Demnächst"
-        },
         "expect": {
             "heading": "Was Sie erwartet",
             "items": [
@@ -197,6 +290,113 @@
             "where": "Deutsche Internationale Schule Pretoria",
             "signUp": "Anmeldung bei",
             "helau": "DCV Helau!"
+        },
+        "milestones": {
+            "common": {
+                "next": "Demnächst"
+            },
+            "season-opening": {
+                "name": "Sessionseröffnung, 11.11. um 11:11 Uhr",
+                "kicker": "11. November · 11:11 Uhr",
+                "badge": "11:11",
+                "title": "Die fünfte Jahreszeit hat begonnen!",
+                "shout": "DCV Helau!",
+                "text": "Am 11.11. um 11:11 Uhr beginnt die Karnevalssession. Der Countdown zu unserem nächsten Karneval läuft."
+            },
+            "days-100": {
+                "name": "Noch 100 Tage",
+                "kicker": "Countdown",
+                "badge": "100",
+                "title": "Noch 100 Tage bis zum Karneval!",
+                "shout": "DCV Helau!",
+                "text": "Höchste Zeit, an das Kostüm zu denken."
+            },
+            "days-50": {
+                "name": "Noch 50 Tage",
+                "kicker": "Countdown",
+                "badge": "50",
+                "title": "Nur noch 50 Tage!",
+                "shout": "DCV Helau!",
+                "text": "Die Garde probt und der Elferrat macht sich bereit."
+            },
+            "days-11": {
+                "name": "Noch 11 Tage",
+                "kicker": "Countdown",
+                "badge": "11",
+                "title": "Nur noch 11 Tage!",
+                "shout": "DCV Helau!",
+                "text": "Elf – die Zahl der Narren. Wir sehen uns beim Karneval!"
+            },
+            "tickets": {
+                "name": "Vorverkauf gestartet",
+                "kicker": "Karneval {year}",
+                "badge": "TICKETS",
+                "title": "Der Vorverkauf hat begonnen!",
+                "shout": "DCV Helau!",
+                "text": "Jetzt Karten sichern, bevor sie weg sind."
+            },
+            "weiberfastnacht": {
+                "name": "Weiberfastnacht",
+                "kicker": "Der Donnerstag vor Rosenmontag",
+                "badge": "HELAU!",
+                "title": "Heute ist Weiberfastnacht!",
+                "shout": "Krawatten in Gefahr!",
+                "text": "Heute übernehmen die Frauen das Regiment, und keine Krawatte ist sicher. In Deutschland beginnt der Straßenkarneval."
+            },
+            "rosenmontag": {
+                "name": "Rosenmontag",
+                "kicker": "Der Höhepunkt des Karnevals",
+                "badge": "HELAU!",
+                "title": "Heute ist Rosenmontag!",
+                "shout": "Närrische Grüße aus Pretoria",
+                "text": "Während in Deutschland die Umzüge rollen, schicken wir ein lautes Helau aus Pretoria."
+            },
+            "veilchendienstag": {
+                "name": "Veilchendienstag",
+                "text": "Veilchendienstag – der letzte Karnevalstag in Deutschland. Unserer kommt erst noch!"
+            },
+            "aschermittwoch": {
+                "name": "Aschermittwoch",
+                "kicker": "Aschermittwoch",
+                "badge": "VORBEI?",
+                "title": "In Deutschland ist alles vorbei.",
+                "shout": "In Pretoria geht es erst richtig los!",
+                "text": ""
+            },
+            "event-week": {
+                "name": "Karnevalswoche",
+                "kicker": "Diese Woche",
+                "badge": "{date}",
+                "title": "Es ist Karnevalswoche!",
+                "shout": "DCV Helau!",
+                "text": "Kostüm bereitlegen. Alles Wichtige finden Sie unten.",
+                "next": ""
+            },
+            "tonight": {
+                "name": "Die Abende („Heute Abend!“)",
+                "kicker": "Karneval {year}",
+                "badge": "HEUTE",
+                "title": "Heute Abend wird gefeiert!",
+                "shout": "DCV Helau!",
+                "text": "Bis heute Abend. Alles Wichtige finden Sie unten.",
+                "next": ""
+            },
+            "thanks": {
+                "name": "Danke (nach dem Karneval)",
+                "kicker": "Karneval {year}",
+                "badge": "DANKE!",
+                "title": "Das war der Karneval {year}!",
+                "shout": "DCV Helau!",
+                "text": "Danke an alle, die mit uns gefeiert haben, an die Garde, den Elferrat, alle Helfer und unsere Sponsoren."
+            }
+        },
+        "preview": {
+            "heading": "Vorschau der Meilensteine",
+            "intro": "Jede Zeile öffnet die Startseite so, wie sie an diesem Tag aussehen würde. Nur als live markierte Zeilen schalten sich von selbst ein.",
+            "live": "Am Tag live",
+            "previewOnly": "Nur Vorschau",
+            "days": "Tage",
+            "noDate": "Kein Datum festgelegt"
         }
     }
 }

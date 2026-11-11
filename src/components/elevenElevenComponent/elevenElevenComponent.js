@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./elevenElevenComponent.css";
 import { useLocation } from "react-router-dom";
 import { useLanguage } from "../language-context/language-contextComponent";
-import { isSeasonOpening, isSeasonOpeningPreview } from "../../utils/seasonOpening";
+import { activeMilestone } from "../../utils/milestones";
 
 // 11:11 – the Karneval minute. While the visitor's clock reads 11:11 the
 // site throws confetti; on 11 November it also announces the new session.
@@ -78,8 +78,9 @@ const ElevenElevenComponent = () => {
   }, []);
 
   if (!(onTheClock || manual) || dismissed) return null;
-  // The home page is already the celebration while the season opening runs.
-  if (pathname === "/" && (isSeasonOpening() || isSeasonOpeningPreview())) return null;
+  // On a milestone day the home page is already the celebration.
+  const milestone = activeMilestone();
+  if (pathname === "/" && milestone && milestone.variant === "page") return null;
 
   const today = new Date();
   const seasonOpening = today.getMonth() === 10 && today.getDate() === 11;
