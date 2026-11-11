@@ -1,9 +1,11 @@
 // Everything that changes from one Karneval to the next lives here and in
 // the "event" section of components/language-context/translations.json.
-import poster from "../assets/images/dcv2027.webp";
+import posterEn from "../assets/images/dcv2027-en.webp";
+import posterDe from "../assets/images/dcv2027-de.webp";
 
 const event = {
-  poster,
+  // One poster per language.
+  poster: { en: posterEn, de: posterDe },
   // First evening, doors open (South African time). Drives the countdown.
   startsAt: "2027-02-26T18:30:00+02:00",
   // Set to the ticket-shop URL once sales open; while null the site shows

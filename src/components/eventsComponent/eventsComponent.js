@@ -19,7 +19,7 @@ const EventsComponent = () => {
           onClick={() => setShowPoster(true)}
           title={t.posterHint}
         >
-          <img src={event.poster} alt={t.posterAlt} />
+          <img src={event.poster[language]} alt={t.posterAlt} />
         </button>
         <div className="event-intro">
           <p className="event-presents">{t.presents}</p>
@@ -48,7 +48,7 @@ const EventsComponent = () => {
 
       <Modal show={showPoster} onHide={() => setShowPoster(false)} centered size="lg">
         <Modal.Body onClick={() => setShowPoster(false)}>
-          <img className="modal-image" src={event.poster} alt={t.posterAlt} />
+          <img className="modal-image" src={event.poster[language]} alt={t.posterAlt} />
         </Modal.Body>
       </Modal>
     </div>

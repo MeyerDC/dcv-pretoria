@@ -75,6 +75,28 @@
             "helau": "DCV Helau!",
             "text": "At eleven past eleven on the eleventh of the eleventh, the Karneval season opens. The countdown to our next Karneval is on.",
             "next": "Coming up"
+        },
+        "expect": {
+            "heading": "What to expect",
+            "items": [
+                "Live Garde and Elferrat dancing and performances",
+                "German music, dancing and entertainment",
+                "German food and drinks",
+                "Colourful carnival costumes and characters",
+                "A fun-filled celebration of German culture",
+                "Plenty of dancing, laughter and good vibes"
+            ],
+            "invite": "Come dressed up, come dance, or simply come enjoy the Karneval!"
+        },
+        "garde": {
+            "heading": "Garde girls",
+            "wanted": "wanted!",
+            "text": "The DCV Pretoria is looking for motivated Garde girls who love dancing, carnival, fun and being part of an amazing team.",
+            "when": "Every Thursday",
+            "time": "From 18:00",
+            "where": "German International School Pretoria",
+            "signUp": "Sign up with",
+            "helau": "DCV Helau!"
         }
     },
     "de": {
@@ -109,7 +131,7 @@
             "title": "Karneval",
             "motto": [
                 "Früher war alles besser,",
-                "heute wird es Lustiger"
+                "heute wird es lustiger"
             ],
             "dateLabel": "Datum",
             "date": "26.–28.",
@@ -125,7 +147,7 @@
             "ticketsSoon": "Tickets demnächst erhältlich",
             "details": "Zur Veranstaltung",
             "directions": "Route anzeigen",
-            "posterAlt": "DCV-Karneval-Plakat: Früher war alles besser, heute wird es Lustiger",
+            "posterAlt": "DCV-Karneval-Plakat: Früher war alles besser, heute wird es lustiger",
             "posterHint": "Plakat antippen zum Vergrößern"
         },
         "notFound": {
@@ -153,6 +175,28 @@
             "helau": "DCV Helau!",
             "text": "Am 11.11. um 11:11 Uhr beginnt die Karnevalssession. Der Countdown zu unserem nächsten Karneval läuft.",
             "next": "Demnächst"
+        },
+        "expect": {
+            "heading": "Was Sie erwartet",
+            "items": [
+                "Live-Auftritte und Tänze von Garde und Elferrat",
+                "Deutsche Musik, Tanz und Unterhaltung",
+                "Deutsches Essen und Getränke",
+                "Bunte Kostüme und Karnevalsfiguren",
+                "Ein fröhliches Fest der deutschen Kultur",
+                "Viel Tanz, Gelächter und gute Laune"
+            ],
+            "invite": "Verkleidet, tanzend oder einfach zum Genießen – beim Karneval sind alle willkommen!"
+        },
+        "garde": {
+            "heading": "Gardemädchen",
+            "wanted": "gesucht!",
+            "text": "Der DCV Pretoria sucht motivierte Gardemädchen, die Freude am Tanzen, am Karneval und an einem tollen Team haben.",
+            "when": "Jeden Donnerstag",
+            "time": "Ab 18:00 Uhr",
+            "where": "Deutsche Internationale Schule Pretoria",
+            "signUp": "Anmeldung bei",
+            "helau": "DCV Helau!"
         }
     }
 }

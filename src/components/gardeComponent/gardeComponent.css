@@ -1,0 +1,79 @@
+.garde-card {
+  padding: 30px 22px 22px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 18px;
+  box-shadow: 7px 7px 0 var(--red);
+}
+
+.garde-heading {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  line-height: 1.1;
+  color: var(--red);
+}
+.garde-heading em {
+  display: block;
+  font-family: var(--script);
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 1.15em;
+  color: var(--ink);
+}
+
+.garde-text {
+  max-width: 34em;
+  margin: 14px auto 0;
+  font-size: 1.08rem;
+}
+
+.garde-facts {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 14px;
+  margin: 22px 0 24px;
+  padding: 0;
+}
+.garde-facts li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #fbe6b0;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.garde-facts svg {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  color: var(--red);
+}
+
+.garde-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+.garde-call svg {
+  flex: none;
+  width: 20px;
+  height: 20px;
+}
+
+.garde-helau {
+  margin: 18px 0 0;
+  font-family: var(--script);
+  font-size: 1.8rem;
+  color: var(--red);
+}
+.garde-phone {
+  white-space: nowrap;
+}

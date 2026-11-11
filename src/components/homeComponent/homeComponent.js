@@ -5,6 +5,8 @@ import logo from "../../assets/images/dcv-logo-2027.png";
 import { useLanguage } from "../language-context/language-contextComponent";
 import { ELEVEN_EVENT } from "../elevenElevenComponent/elevenElevenComponent";
 import CountdownComponent from "../countdownComponent/countdownComponent";
+import ExpectComponent from "../expectComponent/expectComponent";
+import GardeComponent from "../gardeComponent/gardeComponent";
 import SponsorsComponent from "../sponsorsComponent/sponsorsComponent";
 import SeasonOpeningComponent from "../seasonOpeningComponent/seasonOpeningComponent";
 import { isSeasonOpening, isSeasonOpeningPreview } from "../../utils/seasonOpening";
@@ -58,6 +60,8 @@ function HomeComponent() {
         </Link>
       </div>
       <p className="home-welcome">{welcome}</p>
+      <ExpectComponent />
+      <GardeComponent />
       <SponsorsComponent />
     </div>
   );

@@ -5,6 +5,8 @@ import logo from "../../assets/images/dcv-logo-2027.png";
 import { useLanguage } from "../language-context/language-contextComponent";
 import { ConfettiRain } from "../elevenElevenComponent/elevenElevenComponent";
 import CountdownComponent from "../countdownComponent/countdownComponent";
+import ExpectComponent from "../expectComponent/expectComponent";
+import GardeComponent from "../gardeComponent/gardeComponent";
 import SponsorsComponent from "../sponsorsComponent/sponsorsComponent";
 import { EventFacts, Motto, Swoosh } from "../decorComponent/eventParts";
 
@@ -39,6 +41,8 @@ function SeasonOpeningComponent() {
           </Link>
         </div>
       </section>
+      <ExpectComponent />
+      <GardeComponent />
       <SponsorsComponent />
     </div>
   );
