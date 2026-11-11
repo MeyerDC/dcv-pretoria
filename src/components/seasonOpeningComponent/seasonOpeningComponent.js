@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./seasonOpeningComponent.css";
 import logo from "../../assets/images/dcv-logo-2027.png";
@@ -16,11 +16,25 @@ function SeasonOpeningComponent() {
   const t = translations[language].seasonOpening;
   const e = translations[language].event;
 
+  // A burst of confetti on arrival: 11 seconds, then it fades out and goes,
+  // so the page stays easy to read.
+  const [rain, setRain] = useState("on");
+  useEffect(() => {
+    const fade = setTimeout(() => setRain("fading"), 11000);
+    const stop = setTimeout(() => setRain("off"), 14000);
+    return () => {
+      clearTimeout(fade);
+      clearTimeout(stop);
+    };
+  }, []);
+
   return (
     <div className="season-body">
-      <div className="season-rain">
-        <ConfettiRain />
-      </div>
+      {rain !== "off" && (
+        <div className={`season-rain ${rain === "fading" ? "season-rain-fading" : ""}`}>
+          <ConfettiRain />
+        </div>
+      )}
       <img src={logo} alt="DCV Pretoria" className="season-logo" />
       <p className="season-kicker">{t.kicker}</p>
       <h1 className="season-clock">11:11</h1>
