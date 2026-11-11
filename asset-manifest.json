@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cce748c8.css",
-    "main.js": "/static/js/main.3dd2f596.js",
+    "main.css": "/static/css/main.f34706e8.css",
+    "main.js": "/static/js/main.bcfbd6b7.js",
     "static/js/453.a933ee37.chunk.js": "/static/js/453.a933ee37.chunk.js",
     "static/media/dcv2027.webp": "/static/media/dcv2027.1b71d105de75ae682b48.webp",
     "static/media/dcv-logo-2027.png": "/static/media/dcv-logo-2027.1c26c6d557e030857364.png",
@@ -10,12 +10,12 @@
     "static/media/wmwspices.jpg": "/static/media/wmwspices.a69ee1746562efe2ab02.jpg",
     "static/media/lunasol.jpg": "/static/media/lunasol.615cbd8f6de07455a31e.jpg",
     "index.html": "/index.html",
-    "main.cce748c8.css.map": "/static/css/main.cce748c8.css.map",
-    "main.3dd2f596.js.map": "/static/js/main.3dd2f596.js.map",
+    "main.f34706e8.css.map": "/static/css/main.f34706e8.css.map",
+    "main.bcfbd6b7.js.map": "/static/js/main.bcfbd6b7.js.map",
     "453.a933ee37.chunk.js.map": "/static/js/453.a933ee37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cce748c8.css",
-    "static/js/main.3dd2f596.js"
+    "static/css/main.f34706e8.css",
+    "static/js/main.bcfbd6b7.js"
   ]
 }
