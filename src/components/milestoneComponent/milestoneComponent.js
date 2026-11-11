@@ -78,7 +78,7 @@ function MilestoneComponent({ milestone }) {
           <Motto />
           <CountdownComponent />
           <EventFacts />
-          <Sessions />
+          {milestone.showSessions && <Sessions />}
           <div className="home-actions">
             <TicketButton />
             <Link to="/events" className="dcv-btn dcv-btn-outline">

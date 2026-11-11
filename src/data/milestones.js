@@ -7,6 +7,7 @@
 //             "banner" -> a strip above the normal home page
 //   window    returns [start, end] in ms, or null when it has no date yet
 //   namesSession  the title names the session of that day (data/event.js)
+//   showSessions  list the days of the Karneval (otherwise only on /events)
 //   showNext  show the "coming up" block with motto, countdown and facts
 //
 // The wording of each one is under "milestones" in translations.json.
@@ -56,6 +57,7 @@ const milestones = [
     enabled: true,
     variant: "page",
     namesSession: true,
+    showSessions: true,
     showNext: true,
     window: () => wholeDays(firstDay, lastDay - firstDay + 1),
   },
@@ -63,6 +65,7 @@ const milestones = [
     id: "event-week",
     enabled: true,
     variant: "page",
+    showSessions: true,
     showNext: true,
     window: () => wholeDays(firstDay - 4, 4),
   },

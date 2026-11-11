@@ -10,7 +10,7 @@ import GardeComponent from "../gardeComponent/gardeComponent";
 import SponsorsComponent from "../sponsorsComponent/sponsorsComponent";
 import MilestoneComponent from "../milestoneComponent/milestoneComponent";
 import { useActiveMilestone } from "../../utils/milestones";
-import { EventFacts, Motto, Sessions, Swoosh, TicketButton } from "../decorComponent/eventParts";
+import { EventFacts, Motto, Swoosh, TicketButton } from "../decorComponent/eventParts";
 
 function HomeComponent() {
   const { language, translations } = useLanguage();
@@ -50,7 +50,6 @@ function HomeComponent() {
       <Motto />
       <CountdownComponent />
       <EventFacts />
-      <Sessions />
       <div className="home-actions">
         <TicketButton />
         <Link to="/events" className="dcv-btn dcv-btn-outline">
