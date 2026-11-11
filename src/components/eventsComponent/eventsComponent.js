@@ -1,82 +1,54 @@
 import React, { useState } from "react";
-import { Button, Modal } from 'react-bootstrap';
+import { Modal } from "react-bootstrap";
 import "./eventsComponent.css";
-import dcv2025 from "../../assets/images/dcv2025.jpeg";
+import event from "../../data/event";
 import { useLanguage } from "../language-context/language-contextComponent";
-
-const useHandleImageClick = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-    setSelectedImage(null);
-  };
-
-  const handleImageClick = (image) => {
-    setSelectedImage(image);
-    setShowModal(true);
-  };
-
-  const handleBuyTickets = (event) => {}
-  
-  return {
-    showModal,
-    setShowModal,
-    handleCloseModal,
-    handleImageClick,
-    handleBuyTickets,
-    selectedImage,
-  };
-};
+import { EventFacts, Motto, Swoosh, TicketButton } from "../decorComponent/eventParts";
 
 const EventsComponent = () => {
-  const { showModal, handleCloseModal, handleImageClick, handleBuyTickets, selectedImage } =
-    useHandleImageClick();
+  const [showPoster, setShowPoster] = useState(false);
   const { language, translations } = useLanguage();
-  const { date1, date2, date3, title1, title2, title3, ticketLinks } = translations[language].events;
+  const t = translations[language].event;
 
   return (
     <div className="event-body">
-      <img
-        className="event-image"
-        src={dcv2025}
-        alt="DCV Karneval - Event"
-        onClick={() => handleImageClick(dcv2025)}
-      />
-      <div className="event-row">
-        <h2 className="event-date">{date1}</h2>
-        <h2 className="event-title">{title1}</h2>
-        <Button variant="outline-warning" href={ticketLinks.event1} target="_blank">
-          Buy Tickets
-        </Button>
-      </div>
-      <div className="event-row">
-        <h2 className="event-date">{date2}</h2>
-        <h2 className="event-title">{title2}</h2>
-        <Button variant="outline-warning" href={ticketLinks.event2} target="_blank">
-          Buy Tickets
-        </Button>
-      </div>
-      <div className="event-row">
-        <h2 className="event-date">{date3}</h2>
-        <h2 className="event-title">{title3}</h2>
-        <Button variant="outline-warning" href={ticketLinks.event3} target="_blank">
-          Buy Tickets
-        </Button>
+      <div className="event-top">
+        <button
+          type="button"
+          className="event-poster"
+          onClick={() => setShowPoster(true)}
+          title={t.posterHint}
+        >
+          <img src={event.poster} alt={t.posterAlt} />
+        </button>
+        <div className="event-intro">
+          <p className="event-presents">{t.presents}</p>
+          <h1 className="event-title">{t.title}</h1>
+          <Swoosh />
+              <Motto />
+          <div className="event-cta">
+            <TicketButton />
+          </div>
+        </div>
       </div>
 
+      <EventFacts />
 
-      <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Body>
-          {/* Render the zoomed in image here */}
-          {selectedImage && (
-            <img
-              className="modal-image"
-              src={selectedImage}
-              alt="Zoomed In Image"
-            />
-          )}
+      {event.sessions.length > 0 && (
+        <ul className="event-sessions">
+          {event.sessions.map((session) => (
+            <li className="event-session" key={session.title.en}>
+              <span className="event-session-date">{session.date[language]}</span>
+              <span className="event-session-title">{session.title[language]}</span>
+              <TicketButton url={session.ticketUrl} />
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <Modal show={showPoster} onHide={() => setShowPoster(false)} centered size="lg">
+        <Modal.Body onClick={() => setShowPoster(false)}>
+          <img className="modal-image" src={event.poster} alt={t.posterAlt} />
         </Modal.Body>
       </Modal>
     </div>

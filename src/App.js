@@ -6,8 +6,9 @@ import NavbarComponent from "./components/navbarComponent/navbarComponent";
 import HomeComponent from "./components/homeComponent/homeComponent";
 import AboutComponent from "./components/aboutComponent/aboutComponent";
 import SupportComponent from "./components/supportComponent/supportComponent";
-import NotFoundComponent from "./components/notFoundComponent/notFoundComponent"; // Import your NotFoundComponent
-import "bootstrap/dist/css/bootstrap.min.css";
+import NotFoundComponent from "./components/notFoundComponent/notFoundComponent";
+import ElevenElevenComponent from "./components/elevenElevenComponent/elevenElevenComponent";
+import DecorComponent from "./components/decorComponent/decorComponent";
 import { LanguageProvider } from "./components/language-context/language-contextComponent";
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
     <LanguageProvider>
       <Router>
         <div className="App">
+          <DecorComponent />
+          <ElevenElevenComponent />
           <header className="App-header">
             <NavbarComponent />
           </header>
@@ -24,7 +27,7 @@ function App() {
               <Route path="/events" Component={EventsComponent} />
               <Route path="/about" Component={AboutComponent} />
               <Route path="/support" Component={SupportComponent} />
-              <Route path="*" Component={NotFoundComponent} /> {/* Fallback route */}
+              <Route path="*" Component={NotFoundComponent} />
             </Routes>
           </main>
           <FooterComponent />

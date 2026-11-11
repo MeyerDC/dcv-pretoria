@@ -1,28 +1,38 @@
 import React from "react";
 import "./supportComponent.css";
 import { useLanguage } from "../language-context/language-contextComponent";
+import { Swoosh } from "../decorComponent/eventParts";
 
 const SupportComponent = () => {
   const { language, translations } = useLanguage();
-  const { heading, bankDetails, accountHolder, bank, accountNumber, branchCode, contactDetails, email } = translations[language].support;
+  const t = translations[language];
+  const { heading, bankDetails, accountHolder, bank, accountNumber, branchCode, contactDetails, email } = t.support;
 
   return (
-    <div className="support-body">
-      <p>{heading}</p>
-      <div className="banking-details">
-        <h2>{bankDetails}</h2>
-        <p>{accountHolder}: DEUTSCHER CARNEVALS VEREIN CLUB</p>
-        <p>{bank}: FNB</p>
-        <p>{accountNumber}: 63116276337</p>
-        <p>{branchCode}: 210835</p>
-      </div>
-      <div className="contact-details">
-        <h2>{contactDetails}</h2>
-        <p>
-          {email}:{" "}
+    <div className="page-card support-body">
+      <h1 className="page-heading">{t.navbar.support}</h1>
+      <Swoosh small />
+      <p className="support-lead">{heading}</p>
+
+      <h2>{bankDetails}</h2>
+      <dl className="support-list">
+        <dt>{accountHolder}</dt>
+        <dd>DEUTSCHER CARNEVALS VEREIN CLUB</dd>
+        <dt>{bank}</dt>
+        <dd>FNB</dd>
+        <dt>{accountNumber}</dt>
+        <dd>63116276337</dd>
+        <dt>{branchCode}</dt>
+        <dd>210835</dd>
+      </dl>
+
+      <h2>{contactDetails}</h2>
+      <dl className="support-list">
+        <dt>{email}</dt>
+        <dd>
           <a href="mailto:dcv.pretoria@gmail.com">dcv.pretoria@gmail.com</a>
-        </p>
-      </div>
+        </dd>
+      </dl>
     </div>
   );
 };

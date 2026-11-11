@@ -1,58 +1,86 @@
-.event-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.event-top {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: clamp(24px, 5vw, 56px);
   align-items: center;
-  margin: 0 0 20px 0;
-  padding: 20px;
-  padding-bottom: 100px;
-  border: 1px solid #000;
-  border-radius: 10px;
-  background-color: #3c3c3c72;
-  min-height: 50vh;
 }
 
-.event-image {
-  max-width: 100%;
-  height: 300px;
-  object-fit: contain;
-  border-radius: 10px;
+.event-poster {
+  padding: 0;
+  background: none;
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 8px 8px 0 var(--red), 16px 16px 0 var(--gold);
+  cursor: zoom-in;
+  transform: rotate(-2deg);
+  transition: transform 0.15s ease;
+}
+.event-poster:hover,
+.event-poster:focus-visible {
+  transform: rotate(0deg);
+}
+.event-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.event-row {
+.event-intro .event-title {
+  font-size: clamp(2.8rem, 8.2vw, 5.4rem);
+}
+.event-intro .event-motto {
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+}
+
+.event-cta {
+  margin-top: 36px;
+}
+
+.event-sessions {
+  list-style: none;
+  padding: 0;
+  margin: 48px auto 0;
+  max-width: 760px;
+}
+.event-session {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
-  margin: 10px 0;
-  padding: 10px;
-  border-style: outset;
-  border-radius: 5px;
-  border-color: #000;
-  background-color: #3c3c3cbd;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+  gap: 12px 24px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.event-session-date {
+  font-family: var(--display);
+  font-weight: 900;
+  color: var(--red);
+}
+.event-session-title {
+  font-family: var(--display);
+  font-weight: 700;
+  flex: 1;
+  min-width: 180px;
 }
 
-.event-date {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fbca3f;
+.modal-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: zoom-out;
 }
 
-.event-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fbca3f;
-}
-
-.buy-ticket-btn {
-  background-color: #fbca3f;
-  color: #000;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
+@media (max-width: 720px) {
+  .event-top {
+    grid-template-columns: 1fr;
+  }
+  .event-poster {
+    max-width: 340px;
+    margin: 0 auto;
+  }
 }

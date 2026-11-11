@@ -1,9 +1,11 @@
-// components/notFoundComponent/notFoundComponent.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '../language-context/language-contextComponent';
 
 function NotFoundComponent() {
   const navigate = useNavigate();
+  const { language, translations } = useLanguage();
+  const { heading, text } = translations[language].notFound;
 
   React.useEffect(() => {
     // Redirect to home after 3 seconds
@@ -15,9 +17,10 @@ function NotFoundComponent() {
   }, [navigate]);
 
   return (
-    <div>
-      <h1>404 - Page Not Found</h1>
-      <p>Redirecting to the homepage...</p>
+    <div className="page-card">
+      <h1 className="page-heading">404</h1>
+      <p>{heading}</p>
+      <p>{text}</p>
     </div>
   );
 }

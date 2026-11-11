@@ -1,0 +1,94 @@
+.eleven {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eleven-rain {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.eleven-piece {
+  position: absolute;
+  top: -24px;
+  animation: eleven-fall linear infinite;
+}
+
+@keyframes eleven-fall {
+  0% {
+    transform: translate3d(0, -5vh, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(24px, 50vh, 0) rotate(360deg);
+  }
+  100% {
+    transform: translate3d(-16px, 108vh, 0) rotate(720deg);
+  }
+}
+
+.eleven-badge {
+  position: relative;
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: min(88vw, 460px);
+  padding: 22px 36px 20px;
+  background: var(--ink);
+  color: var(--cream);
+  border: 3px solid var(--gold);
+  border-radius: 22px;
+  box-shadow: 8px 8px 0 var(--red);
+  cursor: pointer;
+  animation: eleven-pop 0.6s cubic-bezier(0.2, 1.6, 0.4, 1) both,
+    eleven-wobble 2.2s ease-in-out 0.6s infinite;
+}
+
+.eleven-time {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(4rem, 20vw, 7.5rem);
+  line-height: 1;
+  color: var(--gold);
+  font-variant-numeric: lining-nums;
+}
+
+.eleven-text {
+  font-family: var(--script);
+  font-size: clamp(1.3rem, 5vw, 1.9rem);
+  line-height: 1.2;
+  margin-top: 8px;
+}
+
+@keyframes eleven-pop {
+  from {
+    transform: scale(0) rotate(-11deg);
+  }
+  to {
+    transform: scale(1) rotate(-3deg);
+  }
+}
+@keyframes eleven-wobble {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eleven-rain {
+    display: none;
+  }
+  .eleven-badge {
+    animation: none;
+  }
+}

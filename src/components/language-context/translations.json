@@ -4,19 +4,6 @@
             "heading": "About Us",
             "content": "Welcome to the German Carnival Association of Pretoria!\n We are a vibrant community dedicated to celebrating the German carnival tradition in Pretoria.\n Our mission is to promote cultural exchange, unity, and fun through various carnival events and activities.\n Join us and experience the joy and excitement of the German carnival!"
         },
-        "events": {
-            "date1": "February 28, 2025",
-            "title1": "DCV Carnival - Kids Carnival",
-            "date2": "February 28, 2025",
-            "title2": "DCV Carnival - German Night",
-            "date3": "March 1, 2025",
-            "title3": "DCV Carnival - International Evening",
-            "ticketLinks": {
-                "event1": "https://www.howler.co.za/events/dcv-2025-kinderkarneval-e6be",
-                "event2": "https://www.howler.co.za/events/dcv-2025-buttenabend-formeller-abend-formal-evening-9f65",
-                "event3": "https://www.howler.co.za/events/dcv-2025-internationaler-abend-international-evening-f73f"
-              }
-        },
         "footer": {
             "rights": "All rights reserved."
         },
@@ -38,25 +25,55 @@
             "events": "Events",
             "about": "About Us",
             "support": "Support Us"
+        },
+        "event": {
+            "presents": "The DCV presents",
+            "title": "Karneval",
+            "motto": [
+                "The Past Was Better,",
+                "Today Is Funnier"
+            ],
+            "dateLabel": "Date",
+            "date": "26–28",
+            "month": "February 2027",
+            "timeLabel": "Time",
+            "time": "18:30 for 19:00",
+            "programme": "Program starts at",
+            "programmeTime": "19:11",
+            "venueLabel": "Venue",
+            "venue": "Deutsche Internationale Schule Pretoria (DSP)",
+            "address": "Simon Vermooten Rd, The Willows, Pretoria, 0041, South Africa",
+            "buyTickets": "Buy Tickets",
+            "ticketsSoon": "Tickets coming soon",
+            "details": "Event details",
+            "directions": "Get directions",
+            "posterAlt": "DCV Karneval poster: The Past Was Better, Today Is Funnier",
+            "posterHint": "Tap the poster to enlarge"
+        },
+        "notFound": {
+            "heading": "Page not found",
+            "text": "Redirecting to the homepage..."
+        },
+        "sponsors": {
+            "heading": "Our Sponsors",
+            "thanks": "Thank you to the sponsors who make our Karneval possible."
+        },
+        "countdown": {
+            "label": "Countdown to Karneval",
+            "days": "Days",
+            "hours": "Hours",
+            "minutes": "Minutes",
+            "seconds": "Seconds"
+        },
+        "eleven": {
+            "everyDay": "It's eleven past eleven – Karneval o'clock!",
+            "seasonOpening": "11.11. at 11:11 – the fifth season has begun!"
         }
     },
     "de": {
         "about": {
             "heading": "Über uns",
             "content": "Willkommen beim Deutschen Karneval Verein von Pretoria!\n Wir sind eine lebendige Gemeinschaft, die sich der Feier der deutschen Karnevalstradition in Pretoria widmet.\n Unsere Mission ist es, kulturellen Austausch, Einheit und Spaß durch verschiedene Karnevalsveranstaltungen und Aktivitäten zu fördern.\n Begleiten Sie uns und erleben Sie die Freude und Aufregung des deutschen Karnevals!"
-        },
-        "events": {
-            "date1": "28. Februar 2025",
-            "title1": "DCV Karneval - Kinderkarneval",
-            "date2": "28. Februar 2025",
-            "title2": "DCV Karneval - Deutscher Abend",
-            "date3": "1. März 2025",
-            "title3": "DCV Karneval - Internationaler Abend",
-            "ticketLinks": {
-                "event1": "https://www.howler.co.za/events/dcv-2025-kinderkarneval-e6be",
-                "event2": "https://www.howler.co.za/events/dcv-2025-buttenabend-formeller-abend-formal-evening-9f65",
-                "event3": "https://www.howler.co.za/events/dcv-2025-internationaler-abend-international-evening-f73f"
-              }
         },
         "footer": {
             "rights": "Alle Rechte vorbehalten."
@@ -79,6 +96,49 @@
             "events": "Veranstaltungen",
             "about": "Über uns",
             "support": "Unterstützen Sie uns"
+        },
+        "event": {
+            "presents": "Der DCV präsentiert",
+            "title": "Karneval",
+            "motto": [
+                "Früher war alles besser,",
+                "heute wird es Lustiger"
+            ],
+            "dateLabel": "Datum",
+            "date": "26.–28.",
+            "month": "Februar 2027",
+            "timeLabel": "Uhrzeit",
+            "time": "18:30 für 19:00",
+            "programme": "Programm beginnt um",
+            "programmeTime": "19:11",
+            "venueLabel": "Ort",
+            "venue": "Deutsche Internationale Schule Pretoria (DSP)",
+            "address": "Simon Vermooten Rd, The Willows, Pretoria, 0041, Südafrika",
+            "buyTickets": "Tickets kaufen",
+            "ticketsSoon": "Tickets demnächst erhältlich",
+            "details": "Zur Veranstaltung",
+            "directions": "Route anzeigen",
+            "posterAlt": "DCV-Karneval-Plakat: Früher war alles besser, heute wird es Lustiger",
+            "posterHint": "Plakat antippen zum Vergrößern"
+        },
+        "notFound": {
+            "heading": "Seite nicht gefunden",
+            "text": "Weiterleitung zur Startseite..."
+        },
+        "sponsors": {
+            "heading": "Unsere Sponsoren",
+            "thanks": "Vielen Dank an die Sponsoren, die unseren Karneval möglich machen."
+        },
+        "countdown": {
+            "label": "Countdown bis zum Karneval",
+            "days": "Tage",
+            "hours": "Stunden",
+            "minutes": "Minuten",
+            "seconds": "Sekunden"
+        },
+        "eleven": {
+            "everyDay": "Elf Uhr elf – es ist Narrenzeit!",
+            "seasonOpening": "Am 11.11. um 11:11 Uhr – die fünfte Jahreszeit beginnt!"
         }
     }
 }

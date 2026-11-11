@@ -1,21 +1,31 @@
 .home-body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 0;
-  height: 20vh;
-  margin: 0 0 20px 0;
-  padding: 20px;
-  h1 {
-    font-size: 3em;
-    color: #eaa930;
-    margin-bottom: 50px;
-  }
+  padding: 8px 0 0;
 }
 
-@media (max-width: 768px) {
-  .home-body {
-    height: 70vh;
-  }
+.home-logo {
+  width: clamp(120px, 22vw, 190px);
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.home-welcome {
+  max-width: 620px;
+  margin: 48px auto 0;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.home-body .sponsors {
+  width: 100%;
 }

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 import translations from './translations.json';
 
 const LanguageContext = createContext();
@@ -6,9 +6,13 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('en');
 
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'de' : 'en'));
+  const toggleLanguage = (next) => {
+    setLanguage((prev) => (translations[next] ? next : prev === 'en' ? 'de' : 'en'));
   };
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   return (
     <LanguageContext.Provider value={{ language, toggleLanguage, translations }}>

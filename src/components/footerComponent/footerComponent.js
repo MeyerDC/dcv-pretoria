@@ -1,6 +1,5 @@
 import React from "react";
 import "./footerComponent.css";
-import * as Icon from "react-feather";
 import { useLanguage } from "../language-context/language-contextComponent";
 
 const FooterComponent = () => {
@@ -8,10 +7,11 @@ const FooterComponent = () => {
   const { rights } = translations[language].footer;
 
   return (
-    <footer>
-      <div className="social-media-links">
-        <p>&copy; DCV Pretoria 2024. {rights}</p>
-      </div>
+    <footer className="site-footer">
+      <div className="tricolour" aria-hidden="true" />
+      <p>
+        &copy; DCV Pretoria {new Date().getFullYear()}. {rights}
+      </p>
     </footer>
   );
 };
