@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e5ed4ee1.css",
-    "main.js": "/static/js/main.5a1ad319.js",
+    "main.js": "/static/js/main.07b0862a.js",
     "static/js/453.a933ee37.chunk.js": "/static/js/453.a933ee37.chunk.js",
     "static/media/dcv2027-en.webp": "/static/media/dcv2027-en.1b71d105de75ae682b48.webp",
     "static/media/dcv2027-de.webp": "/static/media/dcv2027-de.89f02cf35d1decc72163.webp",
@@ -12,11 +12,11 @@
     "static/media/lunasol.jpg": "/static/media/lunasol.615cbd8f6de07455a31e.jpg",
     "index.html": "/index.html",
     "main.e5ed4ee1.css.map": "/static/css/main.e5ed4ee1.css.map",
-    "main.5a1ad319.js.map": "/static/js/main.5a1ad319.js.map",
+    "main.07b0862a.js.map": "/static/js/main.07b0862a.js.map",
     "453.a933ee37.chunk.js.map": "/static/js/453.a933ee37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e5ed4ee1.css",
-    "static/js/main.5a1ad319.js"
+    "static/js/main.07b0862a.js"
   ]
 }
