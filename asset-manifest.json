@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb262d71.css",
-    "main.js": "/static/js/main.a9974c4f.js",
+    "main.css": "/static/css/main.5dc76a16.css",
+    "main.js": "/static/js/main.d2f8c043.js",
     "static/js/453.a933ee37.chunk.js": "/static/js/453.a933ee37.chunk.js",
     "static/media/dcv2027-en.webp": "/static/media/dcv2027-en.1b71d105de75ae682b48.webp",
     "static/media/dcv2027-de.webp": "/static/media/dcv2027-de.89f02cf35d1decc72163.webp",
@@ -11,12 +11,12 @@
     "static/media/wmwspices.jpg": "/static/media/wmwspices.a69ee1746562efe2ab02.jpg",
     "static/media/lunasol.jpg": "/static/media/lunasol.615cbd8f6de07455a31e.jpg",
     "index.html": "/index.html",
-    "main.fb262d71.css.map": "/static/css/main.fb262d71.css.map",
-    "main.a9974c4f.js.map": "/static/js/main.a9974c4f.js.map",
+    "main.5dc76a16.css.map": "/static/css/main.5dc76a16.css.map",
+    "main.d2f8c043.js.map": "/static/js/main.d2f8c043.js.map",
     "453.a933ee37.chunk.js.map": "/static/js/453.a933ee37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb262d71.css",
-    "static/js/main.a9974c4f.js"
+    "static/css/main.5dc76a16.css",
+    "static/js/main.d2f8c043.js"
   ]
 }
