@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./elevenElevenComponent.css";
+import { useLocation } from "react-router-dom";
 import { useLanguage } from "../language-context/language-contextComponent";
+import { isSeasonOpening, isSeasonOpeningPreview } from "../../utils/seasonOpening";
 
 // 11:11 – the Karneval minute. While the visitor's clock reads 11:11 the
 // site throws confetti; on 11 November it also announces the new session.
@@ -19,6 +21,25 @@ const PIECES = Array.from({ length: 111 }, (_, i) => ({
   round: i % 4 === 0,
 }));
 
+export const ConfettiRain = () => (
+  <div className="eleven-rain" aria-hidden="true">
+    {PIECES.map((p) => (
+      <span
+        key={p.id}
+        className={`eleven-piece confetti-${p.colour}`}
+        style={{
+          left: `${p.left}%`,
+          width: p.size,
+          height: p.round ? p.size : p.size * 0.6,
+          borderRadius: p.round ? "50%" : 2,
+          animationDelay: `${p.delay}s`,
+          animationDuration: `${p.duration}s`,
+        }}
+      />
+    ))}
+  </div>
+);
+
 const isElevenEleven = (d) => d.getHours() === 11 && d.getMinutes() === 11;
 
 const ElevenElevenComponent = () => {
@@ -27,6 +48,7 @@ const ElevenElevenComponent = () => {
   const [dismissed, setDismissed] = useState(false);
   const { language, translations } = useLanguage();
   const t = translations[language].eleven;
+  const { pathname } = useLocation();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -56,28 +78,15 @@ const ElevenElevenComponent = () => {
   }, []);
 
   if (!(onTheClock || manual) || dismissed) return null;
+  // The home page is already the celebration while the season opening runs.
+  if (pathname === "/" && (isSeasonOpening() || isSeasonOpeningPreview())) return null;
 
   const today = new Date();
   const seasonOpening = today.getMonth() === 10 && today.getDate() === 11;
 
   return (
     <div className="eleven">
-      <div className="eleven-rain" aria-hidden="true">
-        {PIECES.map((p) => (
-          <span
-            key={p.id}
-            className={`eleven-piece confetti-${p.colour}`}
-            style={{
-              left: `${p.left}%`,
-              width: p.size,
-              height: p.round ? p.size : p.size * 0.6,
-              borderRadius: p.round ? "50%" : 2,
-              animationDelay: `${p.delay}s`,
-              animationDuration: `${p.duration}s`,
-            }}
-          />
-        ))}
-      </div>
+      <ConfettiRain />
       <button
         type="button"
         className="eleven-badge"

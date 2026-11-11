@@ -68,6 +68,13 @@
         "eleven": {
             "everyDay": "It's eleven past eleven – Karneval o'clock!",
             "seasonOpening": "11.11. at 11:11 – the fifth season has begun!"
+        },
+        "seasonOpening": {
+            "kicker": "11 November · 11:11",
+            "title": "The fifth season has begun!",
+            "helau": "DCV Helau!",
+            "text": "At eleven past eleven on the eleventh of the eleventh, the Karneval season opens. The countdown to our next Karneval is on.",
+            "next": "Coming up"
         }
     },
     "de": {
@@ -139,6 +146,13 @@
         "eleven": {
             "everyDay": "Elf Uhr elf – es ist Narrenzeit!",
             "seasonOpening": "Am 11.11. um 11:11 Uhr – die fünfte Jahreszeit beginnt!"
+        },
+        "seasonOpening": {
+            "kicker": "11. November · 11:11 Uhr",
+            "title": "Die fünfte Jahreszeit hat begonnen!",
+            "helau": "DCV Helau!",
+            "text": "Am 11.11. um 11:11 Uhr beginnt die Karnevalssession. Der Countdown zu unserem nächsten Karneval läuft.",
+            "next": "Demnächst"
         }
     }
 }

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./homeComponent.css";
 import logo from "../../assets/images/dcv-logo-2027.png";
@@ -6,12 +6,27 @@ import { useLanguage } from "../language-context/language-contextComponent";
 import { ELEVEN_EVENT } from "../elevenElevenComponent/elevenElevenComponent";
 import CountdownComponent from "../countdownComponent/countdownComponent";
 import SponsorsComponent from "../sponsorsComponent/sponsorsComponent";
+import SeasonOpeningComponent from "../seasonOpeningComponent/seasonOpeningComponent";
+import { isSeasonOpening, isSeasonOpeningPreview } from "../../utils/seasonOpening";
 import { EventFacts, Motto, Swoosh, TicketButton } from "../decorComponent/eventParts";
 
 function HomeComponent() {
   const { language, translations } = useLanguage();
   const { welcome } = translations[language].home;
   const t = translations[language].event;
+
+  // On 11.11. from 11:11 until midnight (SA time) the season-opening page
+  // takes over; the check runs every second so the page flips on the minute.
+  const [seasonOpening, setSeasonOpening] = useState(
+    () => isSeasonOpening() || isSeasonOpeningPreview()
+  );
+  useEffect(() => {
+    const timer = setInterval(
+      () => setSeasonOpening(isSeasonOpening() || isSeasonOpeningPreview()),
+      1000
+    );
+    return () => clearInterval(timer);
+  }, []);
 
   // Eleven quick taps on the jester set off the 11:11 celebration.
   const taps = useRef({ count: 0, last: 0 });
@@ -24,6 +39,8 @@ function HomeComponent() {
       window.dispatchEvent(new Event(ELEVEN_EVENT));
     }
   };
+
+  if (seasonOpening) return <SeasonOpeningComponent />;
 
   return (
     <div className="home-body">

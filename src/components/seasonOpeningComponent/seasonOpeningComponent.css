@@ -1,0 +1,112 @@
+.season-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 16px 48px;
+}
+
+.season-body > *:not(.season-rain) {
+  position: relative;
+  z-index: 1;
+}
+
+.season-rain {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.season-logo {
+  width: min(46vw, 190px);
+  animation: season-wobble 2.2s ease-in-out infinite;
+}
+
+.season-kicker {
+  margin: 24px 0 0;
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 2.6vw, 1rem);
+  color: var(--muted);
+}
+
+.season-clock {
+  margin: 6px 0 0;
+  padding: 6px 36px 10px;
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(5rem, 26vw, 11rem);
+  line-height: 1;
+  color: var(--gold);
+  background: var(--ink);
+  border: 3px solid var(--gold);
+  border-radius: 26px;
+  box-shadow: 10px 10px 0 var(--red);
+  transform: rotate(-3deg);
+  font-variant-numeric: lining-nums;
+}
+
+.season-title {
+  margin: 34px 0 0;
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(1.9rem, 7vw, 3.6rem);
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.season-helau {
+  margin: 6px 0 4px;
+  font-family: var(--script);
+  font-size: clamp(2.4rem, 10vw, 4.6rem);
+  line-height: 1.15;
+  color: var(--red);
+}
+
+.season-text {
+  max-width: 34em;
+  margin: 14px auto 0;
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+.season-next {
+  width: 100%;
+  max-width: 760px;
+  margin-top: 44px;
+  padding-top: 34px;
+  border-top: 2px dashed var(--gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.season-karneval {
+  margin: 4px 0 6px;
+  font-family: var(--display);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 8vw, 3.4rem);
+  color: var(--ink);
+}
+
+@keyframes season-wobble {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .season-logo {
+    animation: none;
+  }
+}
