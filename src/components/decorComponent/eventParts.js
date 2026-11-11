@@ -76,6 +76,39 @@ export const EventFacts = () => {
   );
 };
 
+// Midday on a session's day, so the date is the same in every time zone.
+const sessionDate = (session) => new Date(`${session.day}T12:00:00+02:00`);
+
+// The session on today's South African date, if there is one.
+export const todaysSession = (now = new Date()) => {
+  const today = new Date(now.getTime() + 2 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  return event.sessions.find((session) => session.day === today) || null;
+};
+
+// What happens on which day.
+export const Sessions = () => {
+  const { language } = useLanguage();
+  if (event.sessions.length === 0) return null;
+  const format = new Intl.DateTimeFormat(language, {
+    timeZone: "Africa/Johannesburg",
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+  });
+
+  return (
+    <ul className="event-sessions">
+      {event.sessions.map((session) => (
+        <li className="event-session" key={session.day}>
+          <span className="event-session-date">{format.format(sessionDate(session))}</span>
+          <span className="event-session-title">{session.title[language]}</span>
+          {session.ticketUrl && <TicketButton url={session.ticketUrl} />}
+        </li>
+      ))}
+    </ul>
+  );
+};
+
 export const TicketButton = ({ url = event.ticketUrl }) => {
   const { language, translations } = useLanguage();
   const t = translations[language].event;

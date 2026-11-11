@@ -6,6 +6,7 @@
 //   variant   "page"   -> replaces the home page
 //             "banner" -> a strip above the normal home page
 //   window    returns [start, end] in ms, or null when it has no date yet
+//   namesSession  the title names the session of that day (data/event.js)
 //   showNext  show the "coming up" block with motto, countdown and facts
 //
 // The wording of each one is under "milestones" in translations.json.
@@ -52,28 +53,29 @@ const beforeEaster = (n) => () => wholeDays(easter - n);
 const milestones = [
   {
     id: "tonight",
-    enabled: false,
+    enabled: true,
     variant: "page",
+    namesSession: true,
     showNext: true,
     window: () => wholeDays(firstDay, lastDay - firstDay + 1),
   },
   {
     id: "event-week",
-    enabled: false,
+    enabled: true,
     variant: "page",
     showNext: true,
     window: () => wholeDays(firstDay - 4, 4),
   },
   {
     id: "thanks",
-    enabled: false,
+    enabled: true,
     variant: "page",
     showNext: false,
     window: () => wholeDays(lastDay + 1, 14),
   },
   {
     id: "tickets",
-    enabled: false,
+    enabled: true,
     variant: "page",
     showNext: true,
     // Three days from the date in event.ticketsOnSaleFrom.
@@ -82,9 +84,9 @@ const milestones = [
         ? wholeDays(saDay(new Date(`${event.ticketsOnSaleFrom}T12:00:00+02:00`).getTime()), 3)
         : null,
   },
-  { id: "days-11", enabled: false, variant: "page", showNext: true, window: daysToGo(11) },
-  { id: "days-50", enabled: false, variant: "page", showNext: true, window: daysToGo(50) },
-  { id: "days-100", enabled: false, variant: "page", showNext: true, window: daysToGo(100) },
+  { id: "days-11", enabled: true, variant: "page", showNext: true, window: daysToGo(11) },
+  { id: "days-50", enabled: true, variant: "page", showNext: true, window: daysToGo(50) },
+  { id: "days-100", enabled: true, variant: "page", showNext: true, window: daysToGo(100) },
   {
     id: "season-opening",
     enabled: true,
@@ -97,10 +99,10 @@ const milestones = [
       return [dayStart(day) + (11 * 60 + 11) * 60 * 1000, dayStart(day + 1)];
     },
   },
-  { id: "weiberfastnacht", enabled: false, variant: "page", showNext: true, window: beforeEaster(52) },
-  { id: "rosenmontag", enabled: false, variant: "page", showNext: true, window: beforeEaster(48) },
-  { id: "veilchendienstag", enabled: false, variant: "banner", window: beforeEaster(47) },
-  { id: "aschermittwoch", enabled: false, variant: "page", showNext: true, window: beforeEaster(46) },
+  { id: "weiberfastnacht", enabled: true, variant: "page", showNext: true, window: beforeEaster(52) },
+  { id: "rosenmontag", enabled: true, variant: "page", showNext: true, window: beforeEaster(48) },
+  { id: "veilchendienstag", enabled: true, variant: "banner", window: beforeEaster(47) },
+  { id: "aschermittwoch", enabled: true, variant: "page", showNext: true, window: beforeEaster(46) },
 ];
 
 export default milestones;

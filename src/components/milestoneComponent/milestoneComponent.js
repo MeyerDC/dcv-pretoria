@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./milestoneComponent.css";
 import logo from "../../assets/images/dcv-logo-2027.png";
+import event from "../../data/event";
 import { eventYear } from "../../data/milestones";
 import { useLanguage } from "../language-context/language-contextComponent";
 import { ConfettiRain } from "../elevenElevenComponent/elevenElevenComponent";
@@ -9,7 +10,14 @@ import CountdownComponent from "../countdownComponent/countdownComponent";
 import ExpectComponent from "../expectComponent/expectComponent";
 import GardeComponent from "../gardeComponent/gardeComponent";
 import SponsorsComponent from "../sponsorsComponent/sponsorsComponent";
-import { EventFacts, Motto, Swoosh, TicketButton } from "../decorComponent/eventParts";
+import {
+  EventFacts,
+  Motto,
+  Sessions,
+  Swoosh,
+  TicketButton,
+  todaysSession,
+} from "../decorComponent/eventParts";
 
 // {date} and {year} in milestone wording are filled in from the event.
 export const fillIn = (text, e) =>
@@ -22,6 +30,10 @@ function MilestoneComponent({ milestone }) {
   const common = translations[language].milestones.common;
   const t = translations[language].milestones[milestone.id];
   const badge = fillIn(t.badge, e);
+  // On the days themselves the title names what is on today (in a preview on
+  // any other day: the first one).
+  const session = milestone.namesSession ? todaysSession() || event.sessions[0] : null;
+  const title = session ? `${common.today} ${session.title[language]}` : fillIn(t.title, e);
   // The longer the word on the badge, the smaller it is set, so it always
   // fits a phone screen.
   const length = Math.max(badge.length, 1);
@@ -52,7 +64,7 @@ function MilestoneComponent({ milestone }) {
       <h1 className="season-clock" style={{ fontSize: badgeSize }}>
         {badge}
       </h1>
-      <p className="season-title">{fillIn(t.title, e)}</p>
+      <p className="season-title">{title}</p>
       <p className="season-helau">{fillIn(t.shout, e)}</p>
       <Swoosh />
       {t.text && <p className="season-text">{fillIn(t.text, e)}</p>}
@@ -66,6 +78,7 @@ function MilestoneComponent({ milestone }) {
           <Motto />
           <CountdownComponent />
           <EventFacts />
+          <Sessions />
           <div className="home-actions">
             <TicketButton />
             <Link to="/events" className="dcv-btn dcv-btn-outline">

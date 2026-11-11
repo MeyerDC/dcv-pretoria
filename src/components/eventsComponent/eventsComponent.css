@@ -37,37 +37,6 @@
   margin-top: 36px;
 }
 
-.event-sessions {
-  list-style: none;
-  padding: 0;
-  margin: 48px auto 0;
-  max-width: 760px;
-}
-.event-session {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px 24px;
-  background: var(--paper);
-  border: 2px solid var(--ink);
-  border-radius: 12px;
-  padding: 16px 20px;
-  margin-bottom: 16px;
-  text-align: left;
-}
-.event-session-date {
-  font-family: var(--display);
-  font-weight: 900;
-  color: var(--red);
-}
-.event-session-title {
-  font-family: var(--display);
-  font-weight: 700;
-  flex: 1;
-  min-width: 180px;
-}
-
 .modal-image {
   display: block;
   width: 100%;

@@ -19,11 +19,23 @@ const event = {
   ticketUrl: null,
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=Deutsche+Internationale+Schule+Pretoria",
-  // Optional per-evening rows, e.g.
-  // { date: { en: "26 February", de: "26. Februar" },
-  //   title: { en: "Kids Carnival", de: "Kinderkarneval" },
-  //   ticketUrl: "https://..." }
-  sessions: [],
+  // One row per day. "day" is the South African date; the weekday and date
+  // shown on the site are worked out from it. Add ticketUrl to a row to give
+  // that day its own buy button; a row without one shows no button.
+  sessions: [
+    {
+      day: "2027-02-26",
+      title: { en: "Prinzenball and German Evening", de: "Prinzenball und Deutscher Abend" },
+    },
+    {
+      day: "2027-02-27",
+      title: { en: "International Evening", de: "Internationaler Abend" },
+    },
+    {
+      day: "2027-02-28",
+      title: { en: "Kehraus", de: "Kehraus" },
+    },
+  ],
 };
 
 export default event;

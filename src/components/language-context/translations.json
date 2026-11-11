@@ -93,7 +93,8 @@
         },
         "milestones": {
             "common": {
-                "next": "Coming up"
+                "next": "Coming up",
+                "today": "Today:"
             },
             "season-opening": {
                 "name": "Season opening, 11.11. at 11:11",
@@ -173,12 +174,12 @@
                 "next": ""
             },
             "tonight": {
-                "name": "The evenings (\"Tonight!\")",
+                "name": "The three days (\"Today\")",
                 "kicker": "Karneval {year}",
-                "badge": "TONIGHT",
-                "title": "Tonight we celebrate!",
+                "badge": "TODAY",
+                "title": "Today we celebrate!",
                 "shout": "DCV Helau!",
-                "text": "See you this evening. Everything you need to know is below.",
+                "text": "See you there. Everything you need to know is below.",
                 "next": ""
             },
             "thanks": {
@@ -293,7 +294,8 @@
         },
         "milestones": {
             "common": {
-                "next": "Demnächst"
+                "next": "Demnächst",
+                "today": "Heute:"
             },
             "season-opening": {
                 "name": "Sessionseröffnung, 11.11. um 11:11 Uhr",
@@ -373,12 +375,12 @@
                 "next": ""
             },
             "tonight": {
-                "name": "Die Abende („Heute Abend!“)",
+                "name": "Die drei Tage („Heute“)",
                 "kicker": "Karneval {year}",
                 "badge": "HEUTE",
-                "title": "Heute Abend wird gefeiert!",
+                "title": "Heute wird gefeiert!",
                 "shout": "DCV Helau!",
-                "text": "Bis heute Abend. Alles Wichtige finden Sie unten.",
+                "text": "Wir sehen uns. Alles Wichtige finden Sie unten.",
                 "next": ""
             },
             "thanks": {
