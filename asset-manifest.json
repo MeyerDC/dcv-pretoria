@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.f34706e8.css",
-    "main.js": "/static/js/main.d856c811.js",
+    "main.css": "/static/css/main.fb262d71.css",
+    "main.js": "/static/js/main.a9974c4f.js",
     "static/js/453.a933ee37.chunk.js": "/static/js/453.a933ee37.chunk.js",
-    "static/media/dcv2027.webp": "/static/media/dcv2027.1b71d105de75ae682b48.webp",
+    "static/media/dcv2027-en.webp": "/static/media/dcv2027-en.1b71d105de75ae682b48.webp",
+    "static/media/dcv2027-de.webp": "/static/media/dcv2027-de.89f02cf35d1decc72163.webp",
     "static/media/dcv-logo-2027.png": "/static/media/dcv-logo-2027.1c26c6d557e030857364.png",
     "static/media/elandsheim.jpg": "/static/media/elandsheim.d0b1d9cf2abbd72d487f.jpg",
     "static/media/hciskills.jpg": "/static/media/hciskills.cc9d3e20728cd4e93db3.jpg",
     "static/media/wmwspices.jpg": "/static/media/wmwspices.a69ee1746562efe2ab02.jpg",
     "static/media/lunasol.jpg": "/static/media/lunasol.615cbd8f6de07455a31e.jpg",
     "index.html": "/index.html",
-    "main.f34706e8.css.map": "/static/css/main.f34706e8.css.map",
-    "main.d856c811.js.map": "/static/js/main.d856c811.js.map",
+    "main.fb262d71.css.map": "/static/css/main.fb262d71.css.map",
+    "main.a9974c4f.js.map": "/static/js/main.a9974c4f.js.map",
     "453.a933ee37.chunk.js.map": "/static/js/453.a933ee37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f34706e8.css",
-    "static/js/main.d856c811.js"
+    "static/css/main.fb262d71.css",
+    "static/js/main.a9974c4f.js"
   ]
 }
