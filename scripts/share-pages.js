@@ -40,8 +40,11 @@ const page = ({ title, description, image, address }) => {
     `<meta property="og:description" content="${escape(description)}"/>`,
     `<meta property="og:url" content="${site.url}${address}"/>`,
     `<meta property="og:image" content="${site.url}/share/${image}"/>`,
+    `<meta property="og:image:secure_url" content="${site.url}/share/${image}"/>`,
+    `<meta property="og:image:type" content="image/jpeg"/>`,
     `<meta property="og:image:width" content="1200"/>`,
     `<meta property="og:image:height" content="630"/>`,
+    `<meta property="og:image:alt" content="${escape(title)}"/>`,
     `<meta name="twitter:card" content="summary_large_image"/>`,
   ].join("");
   return template
