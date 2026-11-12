@@ -24,7 +24,8 @@
             "home": "Home",
             "events": "Events",
             "about": "About Us",
-            "support": "Support Us"
+            "support": "Support Us",
+            "orden": "Orden"
         },
         "event": {
             "presents": "The DCV presents",
@@ -197,7 +198,104 @@
             "live": "Live on the day",
             "previewOnly": "Preview only",
             "days": "days",
-            "noDate": "No date set"
+            "noDate": "No date set",
+            "featuresHeading": "Promotion features",
+            "featuresIntro": "The public cannot see these yet. Opening this page switched on preview mode in this browser, so you see them the way everyone would later.",
+            "modeOn": "Preview mode is on",
+            "modeOff": "Preview mode is off",
+            "switchOn": "Switch on",
+            "switchOff": "Switch off",
+            "reset": "Clear test Orden",
+            "barText": "Preview mode: you are seeing features that are not public yet.",
+            "barLink": "Preview page",
+            "features": {
+                "orden": "Orden collection",
+                "nameCard": "Karneval name card",
+                "joinIn": "\"Join in\" section on the home page",
+                "countdownShare": "\"Share the countdown\" button on the home page",
+                "linkPreview": "Link card in WhatsApp"
+            },
+            "ordenTip": "To try collecting, open any milestone above: each one hands out its Orden in this browser.",
+            "linkCardLabel": "How the link would look when pasted into WhatsApp:"
+        },
+        "share": {
+            "saved": "Picture saved. You can now post it on WhatsApp or Instagram.",
+            "failed": "That did not work. Please try again."
+        },
+        "orden": {
+            "heading": "Collect the Orden",
+            "intro": "An Orden is a carnival medal. On every special day before the Karneval this site hands one out. Visit on the day and collect all {total}.",
+            "count": "{n} of {total} collected",
+            "complete": "All {total} collected – DCV Helau!",
+            "notYet": "Collecting has not started yet.",
+            "collected": "Collected",
+            "starter": "Yours on your first visit",
+            "earnedOn": "Collected on {date}.",
+            "how": "This Orden is handed out on {date}. Just visit the website on that day.",
+            "howStarter": "This one is a welcome gift on your first visit.",
+            "share": "Share this Orden",
+            "shareText": "I am collecting the Orden of the DCV Karneval {year}. Get yours:",
+            "back": "To the collection",
+            "note": "Your Orden are kept in this browser only. On another phone or browser the collection starts again.",
+            "toast": "You got an Orden!",
+            "view": "See the collection",
+            "close": "Close",
+            "got": "Orden collected!",
+            "names": {
+                "season-opening": "Season opening",
+                "days-100": "100 days to go",
+                "days-50": "50 days to go",
+                "weiberfastnacht": "Weiberfastnacht",
+                "rosenmontag": "Rosenmontag",
+                "veilchendienstag": "Veilchendienstag",
+                "aschermittwoch": "Ash Wednesday",
+                "days-11": "11 days to go",
+                "event-week": "Karneval week",
+                "tonight": "Karneval {year}",
+                "thanks": "Thank you"
+            }
+        },
+        "narrenname": {
+            "heading": "Your Karneval name",
+            "intro": "Every jester needs a title. Type your first name and find out what you are called at the Karneval.",
+            "label": "First name",
+            "placeholder": "First name",
+            "styleLabel": "Title",
+            "empty": "Type a name and your title appears here.",
+            "again": "Another one",
+            "share": "Share my card",
+            "shareText": "At the DCV Karneval I am {name}. What is your name?",
+            "cardKicker": "At the DCV Karneval {year} I am",
+            "note": "Your name stays on your device. Nothing is sent to us."
+        },
+        "joinIn": {
+            "heading": "Join in",
+            "whatsapp": "Tell friends on WhatsApp",
+            "whatsappSub": "Sends a ready-made message with the link",
+            "whatsappText": "Karneval {year} at the DCV Pretoria, {date}. Are you coming?",
+            "calendar": "Save the date",
+            "calendarSub": "Adds {date} to your calendar",
+            "google": "Google Calendar",
+            "orden": "Collect the Orden",
+            "ordenSub": "A medal on every special day",
+            "nameCard": "Your Karneval name",
+            "nameCardSub": "Get your title on a card to share",
+            "calendarTitle": "DCV Karneval {year}",
+            "countdownShare": "Share the countdown",
+            "countdownLead": "",
+            "countdownLine": "days until Karneval!",
+            "countdownLineOne": "day until Karneval!",
+            "countdownText": "Only {n} days until the DCV Karneval {year}!"
+        },
+        "linkPreview": {
+            "title": "DCV Pretoria – Karneval {year}",
+            "ordenTitle": "Collect the Orden – DCV Karneval {year}",
+            "ordenKicker": "DCV Karneval {year}",
+            "ordenLine": "Collect all {total} Orden",
+            "ordenIndexTitle": "{total} Orden to collect",
+            "nameTitle": "Your Karneval name – DCV Karneval {year}",
+            "nameSample": "Prinz ??? I.",
+            "nameLine": "What is your Karneval name?"
         }
     },
     "de": {
@@ -225,7 +323,8 @@
             "home": "Startseite",
             "events": "Veranstaltungen",
             "about": "Über uns",
-            "support": "Unterstützen Sie uns"
+            "support": "Unterstützen Sie uns",
+            "orden": "Orden"
         },
         "event": {
             "presents": "Der DCV präsentiert",
@@ -398,7 +497,104 @@
             "live": "Am Tag live",
             "previewOnly": "Nur Vorschau",
             "days": "Tage",
-            "noDate": "Kein Datum festgelegt"
+            "noDate": "Kein Datum festgelegt",
+            "featuresHeading": "Aktionen",
+            "featuresIntro": "Die Öffentlichkeit sieht diese Funktionen noch nicht. Mit dem Öffnen dieser Seite wurde in diesem Browser der Vorschau-Modus eingeschaltet. Sie sehen alles so, wie es später alle sehen würden.",
+            "modeOn": "Vorschau-Modus ist an",
+            "modeOff": "Vorschau-Modus ist aus",
+            "switchOn": "Einschalten",
+            "switchOff": "Ausschalten",
+            "reset": "Test-Orden löschen",
+            "barText": "Vorschau-Modus: Sie sehen Funktionen, die noch nicht öffentlich sind.",
+            "barLink": "Vorschau-Seite",
+            "features": {
+                "orden": "Orden-Sammlung",
+                "nameCard": "Narrenname-Karte",
+                "joinIn": "Bereich „Mitmachen“ auf der Startseite",
+                "countdownShare": "Knopf „Countdown teilen“ auf der Startseite",
+                "linkPreview": "Link-Karte in WhatsApp"
+            },
+            "ordenTip": "Zum Ausprobieren einen Meilenstein oben öffnen: Jeder vergibt in diesem Browser seinen Orden.",
+            "linkCardLabel": "So sähe der Link aus, wenn man ihn in WhatsApp einfügt:"
+        },
+        "share": {
+            "saved": "Bild gespeichert. Jetzt können Sie es bei WhatsApp oder Instagram posten.",
+            "failed": "Das hat nicht geklappt. Bitte noch einmal versuchen."
+        },
+        "orden": {
+            "heading": "Orden sammeln",
+            "intro": "An jedem besonderen Tag bis zum Karneval gibt es auf dieser Seite einen Orden. Einfach an dem Tag vorbeischauen und alle {total} sammeln.",
+            "count": "{n} von {total} gesammelt",
+            "complete": "Alle {total} gesammelt – DCV Helau!",
+            "notYet": "Das Sammeln hat noch nicht begonnen.",
+            "collected": "Gesammelt",
+            "starter": "Gibt es beim ersten Besuch",
+            "earnedOn": "Gesammelt am {date}.",
+            "how": "Diesen Orden gibt es am {date}. Einfach an dem Tag die Webseite besuchen.",
+            "howStarter": "Diesen Orden gibt es als Willkommensgeschenk beim ersten Besuch.",
+            "share": "Orden teilen",
+            "shareText": "Ich sammle die Orden vom DCV-Karneval {year}. Hol dir deine:",
+            "back": "Zur Sammlung",
+            "note": "Ihre Orden werden nur in diesem Browser gespeichert. Auf einem anderen Handy oder Browser beginnt die Sammlung neu.",
+            "toast": "Orden erhalten!",
+            "view": "Zur Sammlung",
+            "close": "Schließen",
+            "got": "Orden gesammelt!",
+            "names": {
+                "season-opening": "Sessionseröffnung",
+                "days-100": "Noch 100 Tage",
+                "days-50": "Noch 50 Tage",
+                "weiberfastnacht": "Weiberfastnacht",
+                "rosenmontag": "Rosenmontag",
+                "veilchendienstag": "Veilchendienstag",
+                "aschermittwoch": "Aschermittwoch",
+                "days-11": "Noch 11 Tage",
+                "event-week": "Karnevalswoche",
+                "tonight": "Karneval {year}",
+                "thanks": "Dankeschön"
+            }
+        },
+        "narrenname": {
+            "heading": "Ihr Narrenname",
+            "intro": "Jeder Narr braucht einen Titel. Geben Sie Ihren Vornamen ein und erfahren Sie, wie Sie beim Karneval heißen.",
+            "label": "Vorname",
+            "placeholder": "Vorname",
+            "styleLabel": "Titel",
+            "empty": "Namen eingeben, dann erscheint hier Ihr Titel.",
+            "again": "Noch einmal",
+            "share": "Karte teilen",
+            "shareText": "Beim DCV-Karneval heiße ich {name}. Und du?",
+            "cardKicker": "Beim DCV-Karneval {year} heiße ich",
+            "note": "Ihr Name bleibt auf Ihrem Gerät. Es wird nichts an uns gesendet."
+        },
+        "joinIn": {
+            "heading": "Mitmachen",
+            "whatsapp": "Per WhatsApp weitersagen",
+            "whatsappSub": "Sendet eine fertige Nachricht mit dem Link",
+            "whatsappText": "Karneval {year} beim DCV Pretoria, {date}. Kommst du mit?",
+            "calendar": "Termin merken",
+            "calendarSub": "Trägt {date} in Ihren Kalender ein",
+            "google": "Google Kalender",
+            "orden": "Orden sammeln",
+            "ordenSub": "An jedem besonderen Tag ein Orden",
+            "nameCard": "Ihr Narrenname",
+            "nameCardSub": "Ihr Titel auf einer Karte zum Teilen",
+            "calendarTitle": "DCV Karneval {year}",
+            "countdownShare": "Countdown teilen",
+            "countdownLead": "Noch",
+            "countdownLine": "Tage bis zum Karneval!",
+            "countdownLineOne": "Tag bis zum Karneval!",
+            "countdownText": "Noch {n} Tage bis zum DCV-Karneval {year}!"
+        },
+        "linkPreview": {
+            "title": "DCV Pretoria – Karneval {year}",
+            "ordenTitle": "Orden sammeln – DCV Karneval {year}",
+            "ordenKicker": "DCV Karneval {year}",
+            "ordenLine": "Alle {total} Orden sammeln",
+            "ordenIndexTitle": "{total} Orden zum Sammeln",
+            "nameTitle": "Ihr Narrenname – DCV Karneval {year}",
+            "nameSample": "Prinz ??? I.",
+            "nameLine": "Wie lautet Ihr Narrenname?"
         }
     }
 }

@@ -105,3 +105,16 @@
     display: flex;
   }
 }
+
+/* With a fifth menu item the row is set a little tighter. */
+@media (min-width: 1181px) {
+  .site-nav-full .site-nav-list {
+    gap: 6px 11px;
+  }
+  .site-nav-full .site-nav-link {
+    font-size: 0.8rem;
+  }
+  .site-nav-full .site-nav-brand {
+    font-size: 1rem;
+  }
+}

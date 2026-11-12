@@ -1,3 +1,13 @@
+/* Playfair Display with lining numerals built in, for pictures drawn on a
+   canvas (see src/assets/fonts/README.md). */
+@font-face {
+  font-family: "DCV Display";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("./assets/fonts/playfair-display-lining.woff2") format("woff2");
+}
+
 :root {
   --cream: #fbf2e8;
   --paper: #fffaf0;

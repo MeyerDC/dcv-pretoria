@@ -52,3 +52,82 @@
     grid-row: 1 / span 2;
   }
 }
+
+.preview-second {
+  margin-top: 48px;
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+}
+
+.preview-mode {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 14px;
+}
+.preview-button {
+  padding: 4px 14px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--ink);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.preview-tip {
+  margin: 20px 0 0;
+  text-align: left;
+}
+.preview-tip .preview-state {
+  margin-left: 10px;
+}
+
+/* Roughly how a messenger shows a pasted link */
+.preview-linkcard {
+  max-width: 420px;
+  margin: 12px 0 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #e7f3e2;
+  border: 1px solid #c9dcc2;
+  text-align: left;
+}
+.preview-linkcard img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.preview-linkcard div {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px 10px;
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+.preview-linkcard small {
+  color: var(--muted);
+}
+
+/* Strip shown on every page while preview mode is on */
+.preview-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 14px;
+  padding: 6px 12px;
+  background: var(--ink);
+  color: var(--cream);
+  font-size: 0.85rem;
+  position: relative;
+  z-index: 5;
+}
+.preview-bar a {
+  color: var(--gold);
+}
+.preview-bar .preview-button {
+  padding: 1px 12px;
+  font-size: 0.8rem;
+}

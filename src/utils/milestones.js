@@ -16,14 +16,22 @@ const previewed = () => {
   return (id && milestones.find((m) => m.id === id)) || null;
 };
 
-export const activeMilestone = (now = Date.now()) =>
-  previewed() ||
+const onItsDate = (now) =>
   milestones.find((m) => {
     if (!m.enabled) return false;
     const range = m.window(now);
     return Boolean(range) && now >= range[0] && now < range[1];
-  }) ||
-  null;
+  }) || null;
+
+// The milestone showing now, and whether it is only a preview link.
+export const currentMilestone = (now = Date.now()) => {
+  const preview = previewed();
+  return preview
+    ? { milestone: preview, preview: true }
+    : { milestone: onItsDate(now), preview: false };
+};
+
+export const activeMilestone = (now = Date.now()) => currentMilestone(now).milestone;
 
 // Re-checked every second, so the page flips on the minute without a reload.
 export const useActiveMilestone = () => {

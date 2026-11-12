@@ -3,22 +3,26 @@ import { Link, NavLink } from "react-router-dom";
 import "./navbarComponent.css";
 import logo from "../../assets/images/dcv-logo-2027.png";
 import * as Icon from "react-feather";
+import { useFeatures } from "../../utils/features";
 import { useLanguage } from "../language-context/language-contextComponent";
 
 const LINKS = [
   { to: "/", key: "home" },
   { to: "/events", key: "events" },
   { to: "/about", key: "about" },
+  { to: "/orden", key: "orden", feature: "orden" },
   { to: "/support", key: "support" },
 ];
 
 function NavbarComponent() {
   const [isOpen, setIsOpen] = useState(false);
   const { language, toggleLanguage, translations } = useLanguage();
+  const { isOn } = useFeatures();
   const close = () => setIsOpen(false);
+  const links = LINKS.filter(({ feature }) => !feature || isOn(feature));
 
   return (
-    <nav className="site-nav">
+    <nav className={`site-nav ${links.length > 4 ? "site-nav-full" : ""}`}>
       <Link to="/" className="site-nav-brand" onClick={close}>
         <img src={logo} alt="DCV Pretoria" className="site-nav-logo" />
         <span>DCV Pretoria</span>
@@ -32,9 +36,9 @@ function NavbarComponent() {
         {isOpen ? <Icon.X /> : <Icon.Menu />}
       </button>
       <ul className={`site-nav-list ${isOpen ? "open" : ""}`}>
-        {LINKS.map(({ to, key }) => (
+        {links.map(({ to, key }) => (
           <li key={key}>
-            <NavLink to={to} end className="site-nav-link" onClick={close}>
+            <NavLink to={to} end={to === "/"} className="site-nav-link" onClick={close}>
               {translations[language].navbar[key]}
             </NavLink>
           </li>

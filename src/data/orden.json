@@ -1,0 +1,13 @@
+[
+  { "id": "season-opening", "ribbon": ["ink", "red", "gold"], "shape": "scallop" },
+  { "id": "days-100", "ribbon": ["red", "gold", "red"], "shape": "star" },
+  { "id": "days-50", "ribbon": ["gold", "ink", "gold"], "shape": "star" },
+  { "id": "weiberfastnacht", "ribbon": ["red", "cream", "red"], "shape": "scallop", "mark": "date" },
+  { "id": "rosenmontag", "ribbon": ["red", "cream", "gold"], "shape": "sun", "mark": "date" },
+  { "id": "veilchendienstag", "ribbon": ["violet", "cream", "violet"], "shape": "scallop", "mark": "date" },
+  { "id": "aschermittwoch", "ribbon": ["ash", "ink", "ash"], "shape": "octagon", "mark": "date" },
+  { "id": "days-11", "ribbon": ["ink", "gold", "ink"], "shape": "star" },
+  { "id": "event-week", "ribbon": ["gold", "red", "ink"], "shape": "octagon" },
+  { "id": "tonight", "ribbon": ["ink", "red", "gold"], "shape": "sun", "mark": "HELAU!" },
+  { "id": "thanks", "ribbon": ["gold", "cream", "gold"], "shape": "scallop" }
+]

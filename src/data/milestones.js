@@ -43,9 +43,12 @@ const easterDay = (year) => {
 };
 
 const start = new Date(event.startsAt).getTime();
+export const eventStart = start;
 const firstDay = saDay(start);
 const lastDay = saDay(new Date(`${event.lastDay}T12:00:00+02:00`).getTime());
 export const eventYear = new Date(start + SA_OFFSET).getUTCFullYear();
+// The moment the last day ends.
+export const eventEnd = dayStart(lastDay + 1);
 const easter = easterDay(eventYear);
 
 const daysToGo = (n) => () => wholeDays(firstDay - n);

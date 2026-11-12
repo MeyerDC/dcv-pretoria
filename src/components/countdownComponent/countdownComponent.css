@@ -37,3 +37,11 @@
   text-transform: uppercase;
   color: var(--gold);
 }
+
+.countdown-share {
+  margin-top: 18px;
+}
+.countdown-share .dcv-btn {
+  font-size: 0.9rem;
+  padding: 8px 20px;
+}

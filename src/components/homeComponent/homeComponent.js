@@ -7,6 +7,8 @@ import { ELEVEN_EVENT } from "../elevenElevenComponent/elevenElevenComponent";
 import CountdownComponent from "../countdownComponent/countdownComponent";
 import ExpectComponent from "../expectComponent/expectComponent";
 import GardeComponent from "../gardeComponent/gardeComponent";
+import JoinInComponent from "../joinInComponent/joinInComponent";
+import CountdownShare from "../countdownComponent/countdownShare";
 import SponsorsComponent from "../sponsorsComponent/sponsorsComponent";
 import MilestoneComponent from "../milestoneComponent/milestoneComponent";
 import { useActiveMilestone } from "../../utils/milestones";
@@ -49,6 +51,7 @@ function HomeComponent() {
       <Swoosh />
       <Motto />
       <CountdownComponent />
+      <CountdownShare />
       <EventFacts />
       <div className="home-actions">
         <TicketButton />
@@ -58,6 +61,7 @@ function HomeComponent() {
       </div>
       <p className="home-welcome">{welcome}</p>
       <ExpectComponent />
+      <JoinInComponent />
       <GardeComponent />
       <SponsorsComponent />
     </div>

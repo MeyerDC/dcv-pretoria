@@ -21,8 +21,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build && cp build/index.html build/404.html",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build && node scripts/share-pages.js",
+    "deploy": "gh-pages -d build",
+    "og-images": "node scripts/make-og-images.js",
+    "qr": "node scripts/make-qr.js"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +45,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "playwright-core": "^1.65.0",
+    "qrcode": "^1.5.4"
   }
 }

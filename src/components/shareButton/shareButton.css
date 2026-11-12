@@ -1,0 +1,26 @@
+.share-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.share-button .dcv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.share-button .dcv-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.share-button svg {
+  flex: none;
+  width: 20px;
+  height: 20px;
+}
+.share-note {
+  max-width: 22em;
+  font-size: 0.95rem;
+  color: var(--muted);
+}

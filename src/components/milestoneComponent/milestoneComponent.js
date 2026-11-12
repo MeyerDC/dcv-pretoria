@@ -9,6 +9,7 @@ import { ConfettiRain } from "../elevenElevenComponent/elevenElevenComponent";
 import CountdownComponent from "../countdownComponent/countdownComponent";
 import ExpectComponent from "../expectComponent/expectComponent";
 import GardeComponent from "../gardeComponent/gardeComponent";
+import JoinInComponent from "../joinInComponent/joinInComponent";
 import SponsorsComponent from "../sponsorsComponent/sponsorsComponent";
 import {
   EventFacts,
@@ -88,6 +89,7 @@ function MilestoneComponent({ milestone }) {
         </section>
       )}
       {milestone.showNext && <ExpectComponent />}
+      <JoinInComponent />
       {milestone.showNext && <GardeComponent />}
       <SponsorsComponent />
     </div>
