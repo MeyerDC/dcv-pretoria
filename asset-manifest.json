@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5ed4ee1.css",
-    "main.js": "/static/js/main.07b0862a.js",
+    "main.css": "/static/css/main.65b28fa9.css",
+    "main.js": "/static/js/main.42b5ce55.js",
     "static/js/453.a933ee37.chunk.js": "/static/js/453.a933ee37.chunk.js",
     "static/media/dcv2027-en.webp": "/static/media/dcv2027-en.1b71d105de75ae682b48.webp",
     "static/media/dcv2027-de.webp": "/static/media/dcv2027-de.89f02cf35d1decc72163.webp",
@@ -9,14 +9,15 @@
     "static/media/elandsheim.jpg": "/static/media/elandsheim.d0b1d9cf2abbd72d487f.jpg",
     "static/media/hciskills.jpg": "/static/media/hciskills.cc9d3e20728cd4e93db3.jpg",
     "static/media/wmwspices.jpg": "/static/media/wmwspices.a69ee1746562efe2ab02.jpg",
+    "static/media/playfair-display-lining.woff2": "/static/media/playfair-display-lining.1416702b4a48d4218ade.woff2",
     "static/media/lunasol.jpg": "/static/media/lunasol.615cbd8f6de07455a31e.jpg",
     "index.html": "/index.html",
-    "main.e5ed4ee1.css.map": "/static/css/main.e5ed4ee1.css.map",
-    "main.07b0862a.js.map": "/static/js/main.07b0862a.js.map",
+    "main.65b28fa9.css.map": "/static/css/main.65b28fa9.css.map",
+    "main.42b5ce55.js.map": "/static/js/main.42b5ce55.js.map",
     "453.a933ee37.chunk.js.map": "/static/js/453.a933ee37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5ed4ee1.css",
-    "static/js/main.07b0862a.js"
+    "static/css/main.65b28fa9.css",
+    "static/js/main.42b5ce55.js"
   ]
 }
