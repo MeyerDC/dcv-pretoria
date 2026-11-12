@@ -131,3 +131,21 @@
   padding: 1px 12px;
   font-size: 0.8rem;
 }
+
+.preview-qr {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 28px;
+  margin-top: 16px;
+  text-align: left;
+}
+.preview-qr img {
+  width: 170px;
+  height: auto;
+}
+.preview-qr ul {
+  margin: 0;
+  padding-left: 1.2em;
+}

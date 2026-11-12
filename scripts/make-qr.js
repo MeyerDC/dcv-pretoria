@@ -1,4 +1,5 @@
-// Writes QR codes for print (posters, flyers, table cards) into print/:
+// Writes QR codes for print (posters, flyers, table cards) into public/print/,
+// so they can also be downloaded from the /preview page:
 //
 //   qr.svg / qr.png   the bare code, in the site's black on cream
 //   qr-card.png       the code with the jester and the web address
@@ -12,7 +13,7 @@ const QRCode = require("qrcode");
 
 const root = path.join(__dirname, "..");
 const site = JSON.parse(fs.readFileSync(path.join(root, "src/data/site.json"), "utf8"));
-const out = path.join(root, "print");
+const out = path.join(root, "public", "print");
 const options = { errorCorrectionLevel: "M", margin: 2, color: { dark: "#17130f", light: "#fbf2e8" } };
 
 (async () => {
@@ -47,5 +48,5 @@ const options = { errorCorrectionLevel: "M", margin: 2, color: { dark: "#17130f"
   } finally {
     await browser.close();
   }
-  console.log(`QR codes for ${site.url} written to print/`);
+  console.log(`QR codes for ${site.url} written to public/print/`);
 })();

@@ -160,6 +160,25 @@ function PreviewComponent() {
           <small>{site.host}</small>
         </div>
       </div>
+
+      <h2 className="page-heading preview-second">{t.qrHeading}</h2>
+      <p>{t.qrIntro}</p>
+      <div className="preview-qr">
+        <img src="/print/qr-card.png" alt="" />
+        <ul>
+          {[
+            ["qr-card.png", t.qrCard],
+            ["qr.png", t.qrPng],
+            ["qr.svg", t.qrSvg],
+          ].map(([file, label]) => (
+            <li key={file}>
+              <a href={`/print/${file}`} download={`dcv-${file}`}>
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

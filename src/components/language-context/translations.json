@@ -216,7 +216,12 @@
                 "linkPreview": "Link card in WhatsApp"
             },
             "ordenTip": "To try collecting, open any milestone above: each one hands out its Orden in this browser.",
-            "linkCardLabel": "How the link would look when pasted into WhatsApp:"
+            "linkCardLabel": "How the link would look when pasted into WhatsApp:",
+            "qrHeading": "QR codes for print",
+            "qrIntro": "For posters, flyers and table cards. Scanning opens the website.",
+            "qrCard": "With jester and address (PNG)",
+            "qrPng": "Code only (PNG)",
+            "qrSvg": "Code only (SVG, for print shops)"
         },
         "share": {
             "saved": "Picture saved. You can now post it on WhatsApp or Instagram.",
@@ -515,7 +520,12 @@
                 "linkPreview": "Link-Karte in WhatsApp"
             },
             "ordenTip": "Zum Ausprobieren einen Meilenstein oben öffnen: Jeder vergibt in diesem Browser seinen Orden.",
-            "linkCardLabel": "So sähe der Link aus, wenn man ihn in WhatsApp einfügt:"
+            "linkCardLabel": "So sähe der Link aus, wenn man ihn in WhatsApp einfügt:",
+            "qrHeading": "QR-Codes für den Druck",
+            "qrIntro": "Für Plakate, Flyer und Tischkarten. Beim Scannen öffnet sich die Webseite.",
+            "qrCard": "Mit Narr und Adresse (PNG)",
+            "qrPng": "Nur der Code (PNG)",
+            "qrSvg": "Nur der Code (SVG, für die Druckerei)"
         },
         "share": {
             "saved": "Bild gespeichert. Jetzt können Sie es bei WhatsApp oder Instagram posten.",
