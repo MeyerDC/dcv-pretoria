@@ -84,17 +84,152 @@
   color: var(--muted);
 }
 
+/* One medal */
 .orden-one {
+  max-width: 560px;
   text-align: center;
+  box-shadow: 7px 7px 0 var(--red);
 }
+.orden-one-locked {
+  box-shadow: 6px 6px 0 var(--gold);
+}
+
+.orden-kicker {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* The medal hangs in front of a soft gold glow and sways a little. */
+.orden-stage {
+  display: flex;
+  justify-content: center;
+  margin: 18px auto 0;
+  padding: 6px 0 14px;
+  background: radial-gradient(circle at 50% 68%, rgba(242, 176, 30, 0.38) 0, rgba(242, 176, 30, 0) 58%);
+}
+.orden-stage .medal-canvas {
+  transform-origin: 50% 4%;
+  animation: orden-sway 3.4s ease-in-out infinite;
+}
+.orden-one-locked .orden-stage {
+  background: none;
+}
+.orden-one-locked .medal-canvas {
+  animation: none;
+}
+@keyframes orden-sway {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
 .orden-name {
-  margin: 12px 0 6px;
+  margin: 4px 0 0;
   font-family: var(--display);
   font-weight: 900;
-  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  font-size: clamp(1.9rem, 6.5vw, 2.8rem);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+  hyphens: auto;
 }
-.orden-back {
-  margin: 24px 0 0;
+
+.orden-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 22px;
+  padding: 5px 16px 5px 12px;
+  border: 2px dashed var(--muted);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.3;
+  text-align: left;
+}
+.orden-status svg {
+  flex: none;
+  width: 18px;
+  height: 18px;
+}
+.orden-status-got {
+  border: 0;
+  background: #fbe6b0;
+  color: var(--ink);
+  font-weight: 600;
+}
+.orden-status-got svg {
+  padding: 2px;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+  stroke-width: 3.5;
+}
+
+.orden-how {
+  max-width: 26em;
+  margin: 0 auto;
+}
+
+.orden-pager {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 2px dashed var(--gold);
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+.orden-pager a {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.orden-pager a:hover {
+  color: var(--red);
+}
+.orden-pager > :first-child {
+  justify-self: start;
+  text-align: left;
+}
+.orden-pager > :last-child {
+  justify-self: end;
+  text-align: right;
+}
+.orden-pager svg {
+  flex: none;
+  width: 20px;
+  height: 20px;
+}
+.orden-pager .orden-pager-all {
+  padding: 4px 14px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  font-family: var(--display);
+  font-weight: 700;
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .orden-pager a:not(.orden-pager-all) span {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .orden-stage .medal-canvas {
+    animation: none;
+  }
 }
 
 .medal-canvas {

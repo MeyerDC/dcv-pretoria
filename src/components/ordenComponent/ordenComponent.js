@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
+import * as Icon from "react-feather";
 import "./ordenComponent.css";
 import site from "../../data/site.json";
 import { eventYear } from "../../data/milestones";
@@ -21,26 +22,55 @@ function OrdenComponent() {
 
   if (orden) {
     const has = Boolean(orden.earnedAt);
+    const at = list.indexOf(orden);
+    const previous = list[at - 1];
+    const next = list[at + 1];
     return (
-      <div className="page-card orden-one">
-        <MedalCanvas orden={orden} size={220} locked={!has} />
-        <h1 className="orden-name">{orden.name}</h1>
-        {has ? (
-          <>
-            <p>{t.earnedOn.replace("{date}", orden.earnedDay)}</p>
-            <ShareButton
-              label={t.share}
-              filename={`dcv-orden-${orden.id}.jpg`}
-              text={`${t.shareText.replace("{year}", year)} ${site.url}/orden`}
-              build={() => ordenStory(orden, cardTexts(orden))}
-            />
-          </>
-        ) : (
-          <p>{orden.starter ? t.howStarter : t.how.replace("{date}", orden.day)}</p>
-        )}
-        <p className="orden-back">
-          <Link to="/orden">{t.back}</Link>
+      <div className={`page-card orden-one ${has ? "" : "orden-one-locked"}`}>
+        <p className="orden-kicker">
+          {t.position.replace("{n}", at + 1).replace("{total}", total)}
         </p>
+        <div className="orden-stage">
+          <MedalCanvas orden={orden} size={230} locked={!has} />
+        </div>
+        <h1 className="orden-name">{orden.name}</h1>
+        <p className={`orden-status ${has ? "orden-status-got" : ""}`}>
+          {has ? <Icon.Check /> : <Icon.Lock />}
+          {has ? t.earnedOn.replace("{date}", orden.earnedDay) : t.notYours}
+        </p>
+        {has ? (
+          <ShareButton
+            label={t.share}
+            filename={`dcv-orden-${orden.id}.jpg`}
+            text={`${t.shareText.replace("{year}", year)} ${site.url}/orden`}
+            build={() => ordenStory(orden, cardTexts(orden))}
+          />
+        ) : (
+          <p className="orden-how">
+            {orden.starter ? t.howStarter : t.how.replace("{date}", orden.day)}
+          </p>
+        )}
+        <nav className="orden-pager">
+          {previous ? (
+            <Link to={`/orden/${previous.id}`} aria-label={t.previous}>
+              <Icon.ChevronLeft />
+              <span>{previous.name}</span>
+            </Link>
+          ) : (
+            <span />
+          )}
+          <Link to="/orden" className="orden-pager-all">
+            {t.back}
+          </Link>
+          {next ? (
+            <Link to={`/orden/${next.id}`} aria-label={t.next}>
+              <span>{next.name}</span>
+              <Icon.ChevronRight />
+            </Link>
+          ) : (
+            <span />
+          )}
+        </nav>
       </div>
     );
   }

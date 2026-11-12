@@ -17,6 +17,8 @@ export const useOrden = () => {
     const changed = () => setEarned(readOrden());
     window.addEventListener(ORDEN_CHANGED, changed);
     window.addEventListener("dcv-features", changed);
+    // A medal handed out while this page was loading is picked up here.
+    changed();
     return () => {
       window.removeEventListener(ORDEN_CHANGED, changed);
       window.removeEventListener("dcv-features", changed);

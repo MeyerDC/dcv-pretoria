@@ -258,7 +258,11 @@
                 "event-week": "Karneval week",
                 "tonight": "Karneval {year}",
                 "thanks": "Thank you"
-            }
+            },
+            "position": "Orden {n} of {total}",
+            "notYours": "Not collected yet",
+            "previous": "Previous Orden",
+            "next": "Next Orden"
         },
         "narrenname": {
             "heading": "Your Karneval name",
@@ -562,7 +566,11 @@
                 "event-week": "Karnevalswoche",
                 "tonight": "Karneval {year}",
                 "thanks": "Dankeschön"
-            }
+            },
+            "position": "Orden {n} von {total}",
+            "notYours": "Noch nicht gesammelt",
+            "previous": "Vorheriger Orden",
+            "next": "Nächster Orden"
         },
         "narrenname": {
             "heading": "Ihr Narrenname",
