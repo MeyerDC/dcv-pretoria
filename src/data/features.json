@@ -3,15 +3,15 @@
     "live": true
   },
   "joinIn": {
-    "live": false
+    "live": true
   },
   "orden": {
-    "live": false
+    "live": true
   },
   "nameCard": {
-    "live": false
+    "live": true
   },
   "countdownShare": {
-    "live": false
+    "live": true
   }
 }
